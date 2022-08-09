@@ -1,1 +1,11 @@
-// Начните писать стили здесь
+ @use "fonts.scss";
+ @use "mixin.scss";
+
+body {
+  background-color: rgb(53, 163, 81);
+  font-family: "Open Sans", sans-serif;
+  }
+
+.visually-hidden {
+  @include mixin.visually-hidden;
+}
