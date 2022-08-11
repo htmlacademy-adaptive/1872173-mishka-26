@@ -1,10 +1,23 @@
- @use "fonts.scss";
- @use "mixin.scss";
+@use "fonts.scss";
+@use "mixin.scss";
+@use "about-us.scss";
+@use "button";
+@use "catalog-popular.scss";
+@use "catalog.scss";
+@use "contacts.scss";
+@use "footer.scss";
+@use "header.scss";
+@use "modal_window.scss";
+@use "product-options.scss";
+@use "title.scss";
+@use "top_menu.scss";
+@use "forms.scss";
+
 
 body {
-  background-color: rgb(53, 163, 81);
+  background-color: rgb(255, 255, 255);
   font-family: "Open Sans", sans-serif;
-  }
+}
 
 .visually-hidden {
   @include mixin.visually-hidden;

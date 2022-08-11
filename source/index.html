@@ -51,10 +51,10 @@
         <h2 class="visually-hidden">Что мы производим</h2>
         <div class="product-options__wrapper">
           <div class="product-options__list interior-item">
-            <a class="interior-item__link" href="#">Предметы интерьера</a>
+            <a class="product-options__link interior-item__link" href="#">Предметы интерьера</a>
           </div>
           <div class="product-options__list toys-item">
-            <a class="toys-item__link" href="#">Детские игрушки</a>
+            <a class="product-options__link toys-item__link" href="#">Детские игрушки</a>
           </div>
         </div>
       </section>
@@ -64,12 +64,12 @@
           <b class="catalog-popular__period">Товар недели</b>
           <p class="catalog-popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
           <dl class="catalog-popular__item">
-            <dt class="catalog-popular__item-description">Цвет:</dt>
-            <dd class="catalog-popular__item-description">тиффани/серый</dd>
-            <dt class="catalog-popular__item-description">Диаметр:</dt>
-            <dd class="catalog-popular__item-description">25 см</dd>
-            <dt class="catalog-popular__item-description">Высота:</dt>
-            <dd class="catalog-popular__item-description">15 см</dd>
+            <dt class="catalog-popular__item-type">Цвет:</dt>
+            <dd class="catalog-popular__item-variant">тиффани/серый</dd>
+            <dt class="catalog-popular__item-type">Диаметр:</dt>
+            <dd class="catalog-popular__item-variant">25 см</dd>
+            <dt class="catalog-popular__item-type">Высота:</dt>
+            <dd class="catalog-popular__item-variant">15 см</dd>
           </dl>
           <img src="" width="315" height="260" alt="Вязаные корзинки">
           <div class="catalog-popular__footer">
@@ -101,8 +101,8 @@
                     <cite class="feedback__author-info">Анастасия Красильникова</cite>
                     <span class="feedback__author-email">@misssssiskras</span>
                 </blockquote>
-                <button class="feedback__prev" type="button">Предыдущий отзыв</button>
-                <button class="feedback__next" type="button">Следующий отзыв</button>
+                <button class="feedback__prev visually-hidden" type="button">Предыдущий отзыв</button>
+                <button class="feedback__next visually-hidden" type="button">Следующий отзыв</button>
                 <a class="button feedback-button" href="#">Написать</a>
             </div>
         </div>
@@ -148,5 +148,31 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+        <div class="modal modal-container__modal modal-order">
+          <section class="modal-order-content">
+            <h2 class="modal-order-content__title">Добавить в корзину</h2>
+            <p class="modal-order-content__description">Выберите размер:</p>
+            <form class="modal-order-content__modal-form modal-form" method="post" action="https://echo.htmlacademy.ru/">
+                <div class="modal-form_form-radio">
+                    <label class="modal-form_input">S
+                        <input class="modal-form_input" type="radio" name="radio" value="S" checked>
+                    </label>
+                </div>
+                <div class="modal-form_form-radio">
+                    <label class="modal-form_input">M
+                        <input class="modal-form_input" type="radio" name="radio" value="M" >
+                    </label>
+                </div>
+                <div class="modal-form_form-radio">
+                    <label class="modal-form_input">L
+                        <input class="modal-form_input" type="radio" name="radio" value="L" >
+                    </label>
+                </div>
+            </form>
+            <button class="button modal-button" type="button">Добавить</button>
+          </section>
+        </div>
+      </div>
   </body>
 </html>
