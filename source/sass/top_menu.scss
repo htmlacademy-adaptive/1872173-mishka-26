@@ -1,7 +1,128 @@
+@use "variables.scss";
+
 .top-menu__title {
+  display: block;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+  padding: 73px 30px 120px 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.top-menu__list {
+  display: none;
+}
+
+.top-menu__item-order {
+  display: none;
+}
+
+.top-menu-main-page__wrapper--desktop {
+  display: none;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .top-menu__title {
     font-weight: 700;
-    font-size: 27px;
-    line-height: 30px;
-    padding-top: 73px;
-    padding-bottom: 120px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .top-menu-main-page__wrapper--desktop {
+    display: none;
+  }
+
+  .top-menu-main-page__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .top-menu__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-menu__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .top-menu__link--free_order {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  .top-menu__item-order {
+    display: block;
+  }
+
+  .top-menu__item {
+    list-style-type: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .top-menu__title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .top-menu__list {
+    display: none;
+  }
+
+  .top-menu-main-page__wrapper {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+  }
+
+  .top-menu-main-page__wrapper--desktop {
+    display: block;
+  }
+
+  .top-menu__item-order {
+    display: block;
+  }
+
+  .top-menu-main-page__wrapper--desktop__item {
+    list-style-type: none;
+  }
+
+  .top-menu-main-page__wrapper--desktop__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-menu-main-page__wrapper--desktop__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .top-menu__link--free_order {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 1);
+    text-decoration: none;
+  }
+
+  .top-menu__wrapper {
+    max-width: 1150px;
+    padding: 0 51px;
+  }
 }

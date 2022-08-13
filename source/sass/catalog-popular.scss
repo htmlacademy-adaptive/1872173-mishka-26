@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .catalog-popular {
   margin-top: 31px;
 }
@@ -38,4 +40,43 @@
   line-height: 24px;
   padding-top: 25px;
   padding-bottom: 24px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .catalog-popular__title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-popular__period {
+    width: 100px;
+    text-align: center;
+  }
+
+  .catalog-popular__image {
+    display: none;
+  }
+
+  .catalog-popular__description {
+    margin: 0;
+  }
+
+  .catalog-popular__container {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    background-image: url("../img/knitted_baskets-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 334px 404px;
+  }
+
+  .catalog-popular__footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-popular-button {
+    align-self: start;
+  }
 }

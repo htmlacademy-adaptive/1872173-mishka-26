@@ -1,5 +1,7 @@
 @use "fonts.scss";
 @use "mixin.scss";
+@use "pages.scss";
+@use "variables.scss";
 @use "about-us.scss";
 @use "button";
 @use "catalog-popular.scss";
@@ -13,11 +15,6 @@
 @use "top_menu.scss";
 @use "forms.scss";
 
-
-body {
-  background-color: rgb(255, 255, 255);
-  font-family: "Open Sans", sans-serif;
-}
 
 .visually-hidden {
   @include mixin.visually-hidden;
