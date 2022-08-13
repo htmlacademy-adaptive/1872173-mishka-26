@@ -4,10 +4,6 @@
   margin-top: 31px;
 }
 
-.catalog-popular__title {
-  padding-bottom: 3px;
-}
-
 .catalog-popular__period {
   color: rgba(99, 209, 187, 1);
   font-weight: 700;
@@ -48,6 +44,11 @@
     justify-content: space-between;
   }
 
+  .title.catalog-popular__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .catalog-popular__period {
     width: 100px;
     text-align: center;
@@ -78,5 +79,43 @@
 
   .catalog-popular-button {
     align-self: start;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .catalog-popular__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 61px 100px 1fr;
+    background-image: url("../img/knitted_baskets-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 525px 636px;
+  }
+
+  .catalog-popular__title-container {
+    align-self: flex-start;
+    justify-content: flex-start;
+    grid-row: 2;
+  }
+
+  .catalog-popular__period {
+    order: -1;
+  }
+
+  .catalog-popular__container {
+    grid-column: 1;
+    background-image: none;
+    grid-row: 3;
+  }
+
+  .title.catalog-popular__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog-popular__item {
+    padding-top: 60px;
+    padding-bottom: 124px;
   }
 }
