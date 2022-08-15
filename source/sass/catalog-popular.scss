@@ -1,0 +1,41 @@
+.catalog-popular {
+  margin-top: 31px;
+}
+
+.catalog-popular__title {
+  padding-bottom: 3px;
+}
+
+.catalog-popular__period {
+  color: rgba(99, 209, 187, 1);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.catalog-popular__description {
+  color: rgba(68, 68, 68, 1);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.catalog-popular__item {
+  color: rgba(68, 68, 68, 1);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  list-style-type: none;
+}
+
+.price {
+  color: rgba(68, 68, 68, 1);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -14,24 +15,24 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="main-navigation__link" href="catalog.html">
                 Каталог Товаров
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="main-navigation__link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
           </ul>
           <div class="main-navigation__list user-list">
-            <a class="user-list__search" href="#">
+            <a class="main-navigation__link user-list__link--search" href="#">
               <svg class="user-list__search-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".2" d="m17.693 16.057-3.477-3.477c1.023-1.33 1.534-2.966 1.534-4.705C15.75 3.477 12.273 0 7.875 0S0 3.477 0 7.875s3.477 7.875 7.875 7.875c1.739 0 3.375-.614 4.704-1.534l3.478 3.477c.204.205.409.307.818.307.614 0 1.125-.511 1.125-1.125 0-.204-.102-.511-.307-.818ZM2.25 7.875c0-3.068 2.557-5.625 5.625-5.625S13.5 4.807 13.5 7.875 10.943 13.5 7.875 13.5 2.25 10.943 2.25 7.875Z"/>
               </svg>
-              <span class="visually-hidden">Поиск</span>
+              <span class="main-navigation__link-text">Поиск по сайту</span>
             </a>
-            <a class="user-list__cart" href="#">
+            <a class="main-navigation__link user-list__link user-list__link--cart" href="#">
               <svg class="user-list__cart-icon" aria-hidden="true" focusable="false" width="21" height="18" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".2" d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"/></svg>
                 Корзина: пока пуста
@@ -47,38 +48,39 @@
         </div>
       </section>
       <section class="product-options">
+        <h2 class="visually-hidden">Что мы производим</h2>
         <div class="product-options__wrapper">
           <div class="product-options__list interior-item">
-            <a class="interior-item__link" href="#">Предметы интерьера</a>
+            <a class="product-options__link interior-item__link" href="#">Предметы интерьера</a>
           </div>
           <div class="product-options__list toys-item">
-            <a class="toys-item__link" href="#">Детские игрушки</a>
+            <a class="product-options__link toys-item__link" href="#">Детские игрушки</a>
           </div>
         </div>
       </section>
       <section class="catalog-popular">
         <div class="catalog-popular__wrapper">
-          <h2 class="catalog-popular__title">Вязаные корзинки</h2>
-          <b class="catalog-popular__period">ТОВАР НЕДЕЛИ</b>
+          <h2 class="catalog-popular__title title">Вязаные корзинки</h2>
+          <b class="catalog-popular__period">Товар недели</b>
           <p class="catalog-popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
           <dl class="catalog-popular__item">
-            <dt class="catalog-popular__item-description">Цвет:</dt>
-            <dd class="catalog-popular__item-description">тиффани/серый</dd>
-            <dt class="catalog-popular__item-description">Диаметр:</dt>
-            <dd class="catalog-popular__item-description">25 см</dd>
-            <dt class="catalog-popular__item-description">Высота:</dt>
-            <dd class="catalog-popular__item-description">15 см</dd>
+            <dt class="catalog-popular__item-type">Цвет:</dt>
+            <dd class="catalog-popular__item-variant">тиффани/серый</dd>
+            <dt class="catalog-popular__item-type">Диаметр:</dt>
+            <dd class="catalog-popular__item-variant">25 см</dd>
+            <dt class="catalog-popular__item-type">Высота:</dt>
+            <dd class="catalog-popular__item-variant">15 см</dd>
           </dl>
           <img src="" width="315" height="260" alt="Вязаные корзинки">
           <div class="catalog-popular__footer">
             <span class="price">Цена: 990 руб.</span>
-            <button class="button order-button" type="button">Заказать</button>
+            <button class="button catalog-popular-button" type="button">Заказать</button>
           </div>
         </div>
       </section>
       <section class="about-us">
         <div class="about-us__wrapper">
-          <h3 class="about-us__title">Коротко о нас:</h3>
+          <h2 class="about-us__title title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item">Экологически чистые материалы</li>
             <li class="about-us__item">Скандинавский стиль по российской цене</li>
@@ -90,24 +92,24 @@
         </div>
       </section>
       <section class="feedback">
-          <h3 class="feedback__title">Отзывы</h3>
+          <h2 class="feedback__title title">Отзывы</h2>
             <div class="feedback__list">
                 <blockquote class="feedback__item">
                   <p class="feedback__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
                     я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                   </p>
-                    <cite class="feedback__author-info">Анастасия Красильникова<br>@misssssiskras</cite>
+                    <cite class="feedback__author-info">Анастасия Красильникова</cite>
+                    <span class="feedback__author-email">@misssssiskras</span>
                 </blockquote>
-                <button class="feedback__prev" type="button">Предыдущий отзыв</button>
-                <button class="feedback__next" type="button">Следующий отзыв</button>
+                <button class="feedback__prev visually-hidden" type="button">Предыдущий отзыв</button>
+                <button class="feedback__next visually-hidden" type="button">Следующий отзыв</button>
                 <a class="button feedback-button" href="#">Написать</a>
             </div>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__information">
-            <h3 class="contacts__title">Контакты</h3>
+            <h2 class="contacts__title title">Контакты</h2>
             <dl class="contacts__details">
               <dt class="contacts__email">e-mail:</dt>
               <dd class="contacts__email-text">
@@ -116,10 +118,9 @@
               <dt class="contacts__address">адрес:</dt>
               <dd class="contacts__address-text">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
             </dl>
-          </div>
-          <div class="map"></div>
-          <a class="button contacts-button" href="#">Напишите нам</a>
         </div>
+        <div class="map"></div>
+        <a class="button contacts-button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -147,5 +148,31 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+        <div class="modal modal-container__modal modal-order">
+          <section class="modal-order-content">
+            <h2 class="modal-order-content__title">Добавить в корзину</h2>
+            <p class="modal-order-content__description">Выберите размер:</p>
+            <form class="modal-order-content__modal-form modal-form" method="post" action="https://echo.htmlacademy.ru/">
+                <div class="modal-form_form-radio">
+                    <label class="modal-form_input">S
+                        <input class="modal-form_input" type="radio" name="radio" value="S" checked>
+                    </label>
+                </div>
+                <div class="modal-form_form-radio">
+                    <label class="modal-form_input">M
+                        <input class="modal-form_input" type="radio" name="radio" value="M" >
+                    </label>
+                </div>
+                <div class="modal-form_form-radio">
+                    <label class="modal-form_input">L
+                        <input class="modal-form_input" type="radio" name="radio" value="L" >
+                    </label>
+                </div>
+            </form>
+            <button class="button modal-button" type="button">Добавить</button>
+          </section>
+        </div>
+      </div>
   </body>
 </html>
