@@ -23,6 +23,10 @@
   display: none;
 }
 
+.top-menu-inner__wrapper {
+  background-color: rgba(241, 241, 241, 1);
+}
+
 @media (min-width: variables.$tablet-width) {
   .top-menu__title {
     font-weight: 700;

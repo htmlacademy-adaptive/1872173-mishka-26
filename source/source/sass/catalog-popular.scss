@@ -1,6 +1,6 @@
 @use "variables.scss";
 
-.catalog-popular {
+.catalog-popular__wrapper {
   margin-top: 31px;
 }
 
@@ -38,13 +38,23 @@
   padding-bottom: 24px;
 }
 
+.catalog-popular__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @media (min-width: variables.$tablet-width) {
+  .catalog-popular__wrapper {
+    margin-top: 31px;
+  }
+
   .catalog-popular__title-container {
     display: flex;
     justify-content: space-between;
   }
 
-  .title.catalog-popular__title {
+  .catalog-popular__title {
     font-size: 43px;
     line-height: 50px;
   }
@@ -72,21 +82,22 @@
     background-size: 334px 404px;
   }
 
-  .catalog-popular__footer {
-    display: flex;
-    flex-direction: column;
-  }
-
   .catalog-popular-button {
     align-self: start;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .catalog-popular__container {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: none;
+  }
+
   .catalog-popular__wrapper {
+    margin-top: 54px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 61px 100px 1fr;
     background-image: url("../img/knitted_baskets-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -97,19 +108,14 @@
     align-self: flex-start;
     justify-content: flex-start;
     grid-row: 2;
+    margin-top: 61px;
   }
 
   .catalog-popular__period {
     order: -1;
   }
 
-  .catalog-popular__container {
-    grid-column: 1;
-    background-image: none;
-    grid-row: 3;
-  }
-
-  .title.catalog-popular__title {
+  .catalog-popular__title {
     font-size: 53px;
     line-height: 57px;
   }

@@ -146,23 +146,34 @@
                     я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                   </p>
                     <cite class="feedback__author-info">Анастасия Красильникова</cite>
-                    <span class="feedback__author-email">@misssssiskras</span>
+                    <p class="feedback__author-email">@misssssiskras</p>
                 </blockquote>
-                <button class="feedback__prev visually-hidden" type="button">Предыдущий отзыв</button>
-                <button class="feedback__next visually-hidden" type="button">Следующий отзыв</button>
-                <a class="button feedback-button" href="#">Написать</a>
-            </div>
+              </div>
+              <div class="feedback_slider">
+                <button class="feedback__prev" type="button">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="#000"/></svg>
+                <span class="visually-hidden">Предыдущий отзыв</span></button>
+              <button class="feedback__next" type="button">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="#000"/></svg>
+                <span class="visually-hidden">Следующий отзыв</span>
+              </button>
+              </div>
+            <a class="button feedback-button" href="#">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
             <h2 class="contacts__title title">Контакты</h2>
             <dl class="contacts__details">
-              <dt class="contacts__email">e-mail:</dt>
+              <div class="contacts__details-wrapper">
+                <dt class="contacts__email">e-mail:</dt>
               <dd class="contacts__email-text">
                 <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </dd>
-              <dt class="contacts__address">адрес:</dt>
+              </div>
+              <div class="contacts__details-wrapper">
+                <dt class="contacts__address">адрес:</dt>
               <dd class="contacts__address-text">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
+              </div>
             </dl>
         </div>
         <div class="map"></div>
