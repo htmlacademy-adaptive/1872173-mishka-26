@@ -1,0 +1,59 @@
+@use "variables.scss";
+
+.page {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-container--page {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.inner-page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+.inner-container {
+  flex-grow: 1;
+}
+
+.inner-container--page {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-container--page {
+    width: 730px;
+  }
+
+  .inner-container--page {
+    width: 730px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-container--page {
+    width: 1080px;
+  }
+
+  .inner-container--page {
+    width: 1080px;
+  }
+}

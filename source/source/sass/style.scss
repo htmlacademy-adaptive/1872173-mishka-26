@@ -1,0 +1,22 @@
+@use "fonts.scss";
+@use "mixin.scss";
+@use "pages.scss";
+@use "variables.scss";
+@use "title.scss";
+@use "about-us.scss";
+@use "feedback.scss";
+@use "button";
+@use "catalog-popular.scss";
+@use "catalog.scss";
+@use "contacts.scss";
+@use "footer.scss";
+@use "header.scss";
+@use "modal_window.scss";
+@use "product-options.scss";
+@use "top_menu.scss";
+@use "forms.scss";
+
+
+.visually-hidden {
+  @include mixin.visually-hidden;
+}
