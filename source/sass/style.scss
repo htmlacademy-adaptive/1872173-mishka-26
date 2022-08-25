@@ -15,7 +15,7 @@
 @use "product-options.scss";
 @use "top_menu.scss";
 @use "forms.scss";
-
+@use "main_nav.scss";
 
 .visually-hidden {
   @include mixin.visually-hidden;

@@ -19,7 +19,7 @@
 
 .main-container--page {
   margin: 0 auto;
-  width: 260px;
+  width: 290px;
 }
 
 .inner-page__body {
@@ -35,25 +35,25 @@
 
 .inner-container--page {
   margin: 0 auto;
-  width: 280px;
+  width: 290px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .main-container--page {
-    width: 730px;
+    width: 678px;
   }
 
   .inner-container--page {
-    width: 730px;
+    width: 678px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main-container--page {
-    width: 1080px;
+    width: 1058px;
   }
 
   .inner-container--page {
-    width: 1080px;
+    width: 1058px;
   }
 }
