@@ -55,7 +55,7 @@
 }
 
 .main-header__logo-wrappep {
-  box-shadow: 0 1px 0 hsl(0, 0%, 93%), inset 0 1px 0 hsl(0, 0%, 93%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .user-list__link {
@@ -86,7 +86,7 @@
 
 .user-list__cart-icon {
   padding-left: 32px;
-  padding-right: 23px;
+  padding-right: 32px;
 
   &:hover {
     color: rgba(99, 209, 187, 1);
@@ -103,6 +103,15 @@
     display: none;
   }
 
+  .main-navigation {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .main-navigation__link {
+    box-shadow: none;
+    padding: 35px 0 34px;
+  }
+
   .user-list {
     display: flex;
     width: 400px;
@@ -111,13 +120,13 @@
   .main-header__logo-table-link {
     display: block;
     width: 371px;
-    padding-left: 50px;
+    padding: 22px 0 20px;
   }
 
   .main-header__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
+    width: 680px;
     margin: 0 auto;
   }
 
@@ -132,15 +141,39 @@
   .main-navigation__link-text {
     display: none;
   }
+
+  .user-list__link--search {
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0.1;
+      height: 92px;
+      width: 1px;
+      top: 0;
+      left: 5px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0.1;
+      height: 92px;
+      width: 1px;
+      top: 0;
+      left: 85px;
+    }
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main-navigation {
-    box-shadow: 0 1px 0 hsl(0, 0%, 93%), inset 0 1px 0 hsl(0, 0%, 93%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .main-navigation__wrapper {
-    width: 1000px;
+    width: 1150px;
   }
 
   .main-navigation__toggle {
@@ -157,6 +190,8 @@
 
   .main-header__logo-link {
     display: block;
+    margin-right: 103px;
+    margin-top: 9px;
   }
 
   .site-list {
@@ -171,8 +206,6 @@
 
   .main-navigation--desktop {
     display: flex;
-    justify-content: space-between;
-    margin-left: 30px;
   }
 
   .main-navigation__link-text {
@@ -192,34 +225,10 @@
       position: absolute;
       background-color: rgba(0, 0, 0, 1);
       opacity: 0.1;
-      height: 80px;
+      height: 92px;
       width: 1px;
       top: 0;
       left: -35px;
-    }
-  }
-
-  .user-list__link--search {
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: rgba(0, 0, 0, 1);
-      opacity: 0.1;
-      height: 80px;
-      width: 1px;
-      top: 0;
-      left: 5px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: rgba(0, 0, 0, 1);
-      opacity: 0.1;
-      height: 80px;
-      width: 1px;
-      top: 0;
-      left: 85px;
     }
   }
 }

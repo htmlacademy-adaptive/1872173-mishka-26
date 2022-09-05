@@ -1,43 +1,94 @@
 @use "variables.scss";
 
 .main-footer {
-  margin-top: 39px;
-}
-
-.main-footer__social {
-  padding-bottom: 58px;
-}
-
-.main-footer__copyright {
-  padding-bottom: 37px;
-}
-
-.inner-footer {
-  margin-top: 55px;
   background-color: rgba(241, 241, 241, 1);
-}
-
-.inner-footer__social {
-  margin-top: 25px;
-  padding-bottom: 58px;
-}
-
-.inner-footer__copyright {
-  padding-bottom: 37px;
 }
 
 .main-footer__logo {
   display: none;
 }
 
+.main-footer__wrapper {
+  margin-top: 25px;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.social__item {
+  list-style-type: none;
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link--icon {
+  fill: #231f20;
+
+  &:hover {
+    fill: rgba(70, 193, 174, 1);
+  }
+
+  &:disabled {
+    fill: rgba(70, 193, 174, 0.3);
+  }
+}
+
+.social__item:first-child {
+  padding-top: 2px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 58px;
+  margin-bottom: 29px;
+  width: 190px;
+}
+
+.copyright__link {
+  display: block;
+  margin-left: 27px;
+  text-decoration: none;
+  fill: #231f20;
+}
+
+.copyright__link--icon {
+  fill: rgba(99, 209, 187, 1);
+
+  &:hover {
+    fill: rgba(70, 193, 174, 1);
+  }
+
+  &:disabled {
+    fill: rgba(70, 193, 174, 0.3);
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
   .main-footer__logo {
     display: block;
+    margin-left: 50px;
+    margin-right: 121px;
   }
 
   .main-footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    margin-top: 51px;
+    width: 100%;
+    max-width: 1150px;
+    justify-content: center;
   }
 
   .social__list {
@@ -45,11 +96,15 @@
     width: 142px;
   }
 
-  .social__item {
-    list-style-type: none;
+  .main-footer__copyright {
+    margin-top: 0;
+    margin-left: 121px;
+    margin-right: 50px;
   }
 }
 
-/*@media (min-width: variables.$desktop-width) {
-
-}*/
+@media (min-width: variables.$desktop-width) {
+  .main-footer__wrapper {
+    justify-content: space-between;
+  }
+}

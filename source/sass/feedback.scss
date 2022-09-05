@@ -43,10 +43,37 @@
   text-align: center;
 }
 
+.feedback__prev,
+.feedback__next {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.feedback__prev-icon,
+.feedback__next-icon {
+  &:hover {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:disabled {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
   .feedback {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .feedback__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__description {
+    font-size: 17px;
   }
 
   .feedback__list {

@@ -6,7 +6,7 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
-  padding: 73px 0 120px;
+  padding: 73px 30px 120px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
 }
@@ -32,6 +32,7 @@
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+    padding: 154px 50px 372px;
   }
 
   .top-menu-main-page__wrapper--desktop {
@@ -40,15 +41,15 @@
 
   .top-menu-main-page__wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+    flex-wrap: wrap;
   }
 
   .top-menu__list {
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
+    margin-left: 40px;
+    margin-top: 20px;
   }
 
   .top-menu__link {
@@ -64,18 +65,30 @@
     font-size: 15px;
     line-height: 24px;
     color: rgba(68, 68, 68, 1);
+    margin-top: 20px;
   }
 
   .top-menu__item-order {
     display: block;
+    margin-left: auto;
+    margin-top: 20px;
   }
 
   .top-menu__item {
     list-style-type: none;
+
+    &:first-child {
+      margin-right: 37px;
+    }
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .top-menu__wrapper {
+    max-width: 1150px;
+  }
+
+
   .top-menu__title {
     font-weight: 700;
     font-size: 53px;
@@ -88,15 +101,10 @@
 
   .top-menu-main-page__wrapper {
     display: flex;
-    width: 1000px;
     justify-content: space-between;
   }
 
   .top-menu-main-page__wrapper--desktop {
-    display: block;
-  }
-
-  .top-menu__item-order {
     display: block;
   }
 
@@ -107,6 +115,13 @@
   .top-menu-main-page__wrapper--desktop__list {
     margin: 0;
     padding: 0;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .top-menu-main-page__wrapper--desktop__item:first-child {
+    margin-right: 41px;
+    margin-left: 75px;
   }
 
   .top-menu-main-page__wrapper--desktop__link {
@@ -123,10 +138,5 @@
     line-height: 24px;
     color: rgba(68, 68, 68, 1);
     text-decoration: none;
-  }
-
-  .top-menu__wrapper {
-    max-width: 1150px;
-    padding: 0 51px;
   }
 }

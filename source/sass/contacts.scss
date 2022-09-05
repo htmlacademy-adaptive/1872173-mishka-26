@@ -12,8 +12,7 @@
   line-height: 30px;
   color: rgba(68, 68, 68, 1);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  row-gap: 40px;
 }
 
 .contacts__email-link {
@@ -27,24 +26,76 @@
 }
 
 .contacts-button {
-  display: inline-block;
+  display: block;
   padding: 16px 37px;
-  margin-top: 50px;
   text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  max-width: max-content;
+  margin-bottom: 39px;
 }
 
 .contacts__email-text {
   margin: 0;
+  margin-left: 35px;
 }
 
 .contacts__address-text {
   margin: 0;
+  margin-left: 35px;
+}
+
+.contacts__details-wrapper {
+  display: flex;
+}
+
+.map {
+  display: block;
+  width: 320px;
+  height: 454px;
+  border: none;
+  margin-bottom: 42px;
+}
+
+.contacts__wrapper {
+  margin-bottom: 62px;
 }
 
 @media (min-width: variables.$tablet-width) {
+  .contacts__wrapper {
+    position: relative;
+    margin-left: 52px;
+    margin-bottom: 62px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/flag.svg");
+      width: 47px;
+      height: 81px;
+      top: -30px;
+      right: 0;
+    }
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+  }
+
+  .contacts__details {
+    grid-template-columns: 308px 335px;
+    column-gap: 51px;
+  }
+
   .contacts__details-wrapper {
     display: flex;
-    justify-content: center;
+    font-size: 17px;
+  }
+
+  .contacts__email-link {
+    font-size: 17px;
   }
 
   .contacts__email-text {
@@ -54,16 +105,26 @@
   .contacts__address-text {
     margin-left: 27px;
   }
+
+  .map {
+    width: 768px;
+    height: 457px;
+    margin-bottom: 55px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .contacts__wrapper--desktop {
+    display: grid;
+  }
+
   .contacts__details {
     display: block;
     grid-column: 2;
   }
 
-  .contacts__details-wrapper {
-    justify-content: flex-start;
+  .contacts__details-wrapper:first-child {
+    margin-bottom: 37px;
   }
 
   .contacts__wrapper {
@@ -71,9 +132,30 @@
     grid-template-columns: 111px 300px auto;
     grid-template-rows: auto;
     column-gap: 62px;
+
+    &::after {
+      top: 55px;
+      left: 0;
+    }
   }
 
   .contacts__title {
     grid-column: 2;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 79px;
+    margin-bottom: 34px;
+  }
+
+  .map {
+    width: 527px;
+    height: 457px;
+    margin-bottom: 0;
+    grid-column: 2;
+    grid-row: 1/4;
+  }
+
+  .contacts-button {
+    margin-left: 225px;
   }
 }
