@@ -85,9 +85,7 @@
 
   .main-footer__wrapper {
     display: flex;
-    margin-top: 51px;
-    width: 100%;
-    max-width: 1150px;
+    margin: 51px;
     justify-content: center;
   }
 
@@ -104,7 +102,18 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-footer__wrapper {
-    justify-content: space-between;
+  .main-footer__copyright {
+    margin-left: 310px;
+    margin-bottom: 0;
+  }
+
+  .main-footer__logo {
+    margin-right: 310px;
+  }
+
+  .main-footer__logo-icon {
+    &:hover {
+      fill: hsl(171, 50%, 52%);
+    }
   }
 }

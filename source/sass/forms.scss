@@ -72,9 +72,10 @@
   line-height: 18px;
   padding: 16px 0;
   border: none;
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 1);
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 0.3);
   font-family: "Open Sans", sans-serif;
+  width: 260px;
 }
 
 .order-wish {
@@ -99,18 +100,20 @@
 }
 
 .item-checkbox {
-  padding: 42px 0;
+  display: block;
+  padding-left: 60px;
+  margin-bottom: 40px;
 }
 
 .customer-information__bio {
   padding-top: 21px;
+  padding-right: 15px;
 }
 
 .order-forms__list-bio {
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
-  margin-top: 50px;
 
   &::after {
     content: "";
@@ -123,6 +126,10 @@
   }
 }
 
+.radio__input-text {
+  display: block;
+  padding-left: 60px;
+}
 
 .order-forms__control {
   position: relative;
@@ -133,12 +140,13 @@
 .radio__input-icon {
   position: absolute;
   top: -15px;
-  left: -61px;
-  width: 52px;
-  height: 52px;
+  left: -31px;
+  width: 42px;
+  height: 42px;
   border: 2px solid rgba(68, 68, 68, 1);
   border-radius: 50%;
   cursor: pointer;
+  margin-left: 30px;
 
   &:hover {
     border-color: rgba(98, 209, 186, 1);
@@ -153,20 +161,20 @@
   content: "";
   position: absolute;
   cursor: pointer;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: rgba(98, 209, 186, 1);
-  top: 15px;
-  left: 15px;
+  top: 13px;
+  left: 13px;
 }
 
 .checkbox__input-icon {
   position: absolute;
   top: -15px;
   left: -61px;
-  width: 52px;
-  height: 52px;
+  width: 38px;
+  height: 38px;
   border: 2px solid #444444;
   cursor: pointer;
 
@@ -182,12 +190,13 @@
 .checkbox__input[type="checkbox"]:checked + .checkbox__input-icon::after {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 10px;
-  background-image: url("../img/tick.svg");
-  width: 31px;
-  height: 22px;
+  top: 10px;
+  left: 7px;
+  background-image: url("../img/tick_small.svg");
+  width: 23px;
+  height: 18px;
 }
+
 
 .customer-information_phone::after {
   content: "";
@@ -203,14 +212,35 @@
   margin-bottom: 34px;
 }
 
+.customer-information_phone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  background-image: url("../img/phone.svg");
+  top: 25px;
+  right: 0;
+}
+
+
 .customer-information_email::after {
   content: "";
   position: absolute;
   width: 182px;
   height: 1px;
-  top: 6px;
+  top: 109px;
   right: 0;
   background-color: rgba(98, 209, 186, 1);
+}
+
+.customer-information_email::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  background-image: url("../img/mail.svg");
+  top: 135px;
+  right: 0;
 }
 
 .order-forms__more::after {
@@ -218,8 +248,8 @@
   position: absolute;
   width: 200px;
   height: 1px;
-  top: 6px;
-  right: 40px;
+  top: 5px;
+  right: 0;
   background-color: rgba(98, 209, 186, 1);
 }
 
@@ -231,6 +261,10 @@
   margin-bottom: 17px;
 }
 
+.phone-input {
+  margin-bottom: 34px;
+  margin-top: 64px;
+}
 
 @media (min-width: variables.$tablet-width) {
   .top-menu-inner__wrapper {
@@ -257,7 +291,10 @@
 
   .order-forms__title {
     padding: 0;
-    width: 80px;
+    width: 96px;
+  }
+
+  .order-forms__title--color {
     padding-top: 66px;
   }
 
@@ -265,6 +302,9 @@
     padding-top: 0;
   }
 
+  .order-forms__group--bio {
+    margin-top: 66px;
+    }
 
   .order-forms__item {
     margin-bottom: 58px;
@@ -272,6 +312,45 @@
     &:first-child {
       padding-top: 0;
     }
+  }
+
+  .checkbox__input-icon {
+    width: 52px;
+    height: 52px;
+    left: -41px;
+  }
+
+  .radio__input-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0;
+  }
+
+  .radio__input[type="radio"]:checked + .radio__input-icon::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgba(98, 209, 186, 1);
+    top: 15px;
+    left: 15px;
+  }
+
+  .checkbox__input-text {
+    display: block;
+    padding-left: 35px;
+  }
+
+  .checkbox__input[type="checkbox"]:checked + .checkbox__input-icon::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background-image: url("../img/tick.svg");
+    width: 31px;
+    height: 22px;
   }
 
   .order-forms__checkbox-list {
@@ -288,14 +367,22 @@
 
   .order-forms__title--wrapper {
     margin-top: 15px;
-    width: 100px;
-    margin-right: 210px;
+    margin-right: 103px;
   }
 
   .customer-information__wrapper {
     display: flex;
+    width: 90%;
   }
 
+  .order-forms__title--contacts {
+    margin-top: 65px;
+    margin-bottom: 63px;
+  }
+
+  .order-forms__title--more {
+    margin-top: 40px;
+  }
 
   .order-forms__footer {
     display: flex;
@@ -315,12 +402,30 @@
     display: none;
   }
 
+  .customer-information_email {
+    margin-bottom: 50px;
+
+    &::before {
+      top: 135px;
+      right: 80px;
+    }
+  }
+
   .order-forms__more::after {
     display: none;
   }
 
-  .customer-information_phone::after {
-    display: none;
+  .customer-information_phone {
+    margin-bottom: 24px;
+
+    &::before {
+      top: 25px;
+      right: 80px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .order-forms__list-bio::after {
@@ -363,8 +468,75 @@
   .order-forms__title--wrapper-bio {
     margin-right: 97px;
   }
+
+  .customer-information {
+    display: flex;
+    width: 500px;
+  }
+
+  .customer-information__bio {
+    margin-right: 26px;
+  }
+
+  .bio-input {
+    width: 100%;
+    max-width: 1050px;
+    padding-left: 16px;
+  }
+
+  .order-wish {
+    width: 100%;
+    max-width: 1050px;
+    margin-left: 109px;
+  }
+
+  .bio-info {
+    margin-bottom: 52px;
+  }
 }
+@media (min-width: variables.$desktop-width) {
 
-/*@media (min-width: variables.$desktop-width) {
+  .customer-information__field {
 
-}*/
+    &:hover {
+      border-color: rgba(98, 209, 186, 1);
+    }
+
+    &:active {
+      border-color: rgba(98, 209, 186, 1);
+    }
+  }
+
+  .order-forms__checkbox-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .customer-information {
+    width: 700px;
+  }
+
+  .customer-information_phone::before {
+    top: 95px;
+    right: 120px;
+  }
+
+  .customer-information_email::before {
+    top: 175px;
+    right: 115px;
+  }
+
+  .phone-input {
+    margin-bottom: 0;
+  }
+
+  .order-forms__title--contacts {
+    margin: 0;
+    align-self: flex-end;
+    margin-bottom: 24px;
+  }
+
+  .order-forms__title--email {
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+}

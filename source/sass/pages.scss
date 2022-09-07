@@ -11,6 +11,7 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  min-width: 320px;
 }
 
 .main-container {
@@ -27,6 +28,7 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  min-width: 320px;
 }
 
 .inner-container {
@@ -50,10 +52,10 @@
 
 @media (min-width: variables.$desktop-width) {
   .main-container--page {
-    width: 1150px;
+    width: 1050px;
   }
 
   .inner-container--page {
-    width: 1150px;
+    width: 1050px;
   }
 }

@@ -62,7 +62,7 @@
       <div class="inner-container--page">
         <section class="top-menu top-menu-main-page">
           <div class="top-menu__wrapper top-menu-inner__wrapper">
-            <div class="top-menu-main-page__wrapper">
+            <div class="top-menu-main-page__wrapper inner-zig_zag_line">
               <ul class="top-menu__list">
                 <li class="top-menu__item">
                   <a class="top-menu__link" href="catalog.html">
@@ -125,7 +125,7 @@
               </fieldset>
             <fieldset class="order-forms__group">
               <div class="order-forms__title--wrapper">
-                <legend class="order-forms__title">Цвет</legend>
+                <legend class="order-forms__title order-forms__title--color">Цвет</legend>
               </div>
               <ul class="order-forms__list order-forms__checkbox-list">
                 <li class="order-forms__item item-checkbox">
@@ -172,7 +172,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="order-forms__group">
+            <fieldset class="order-forms__group order-forms__group--bio">
               <div class="order-forms__title--wrapper order-forms__title--wrapper-bio">
                 <legend class="order-forms__title">ФИО</legend>
               </div>
@@ -180,37 +180,37 @@
                 <li class="order-forms__item">
                   <label class="order-forms customer-information">
                     <span class="customer-information__bio">Имя:</span>
-                    <input class="customer-information__field" type="text" name="name" placeholder="Введите ваше имя*" required>
+                    <input class="customer-information__field bio-input" type="text" name="name" placeholder="Введите ваше имя*" required>
                   </label>
                 </li>
                 <li class="order-forms__item">
                   <label class="order-forms customer-information">
                     <span class="customer-information__bio">Фамилия:</span>
-                    <input class="customer-information__field" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                    <input class="customer-information__field bio-input" type="text" name="surname" placeholder="Укажите фамилию*" required>
                   </label>
                 </li>
                 <li class="order-forms__item">
                   <label class="order-forms customer-information">
                     <span class="customer-information__bio">Отчество:</span>
-                    <input class="customer-information__field" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                    <input class="customer-information__field bio-input" type="text" name="patronymic" placeholder="Отчество, если желаете">
                   </label>
                 </li>
               </ul>
             </fieldset>
               <fieldset class="order-forms__group bio-info bio-info--contacts">
                 <label class="order-forms  customer-information_phone customer-information__wrapper">
-                    <legend class="order-forms__title">Тел</legend>
+                    <legend class="order-forms__title order-forms__title--contacts">Тел</legend>
                   <input class="customer-information__field phone-input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </label>
                 <label class="order-forms customer-information_email customer-information__wrapper">
-                    <legend class="order-forms__title">E-mail</legend>
+                    <legend class="order-forms__title order-forms__title--email">E-mail</legend>
                   <input class="customer-information__field email-input" type="text" name="email" placeholder="Ваш Email*" required>
-                </label>
+              </label>
               </fieldset>
               <fieldset class="order-forms__group bio-info">
                 <label class="order-forms__more customer-information__wrapper">
-                 <legend class="order-forms__title">Доп</legend>
-                  <textarea class="customer-information__field order-wish"  placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                 <legend class="order-forms__title order-forms__title--more">Доп</legend>
+                  <textarea class="customer-information__field order-wish"  placeholder="Опишите все ваши пожелания к заказу" rows="5" cols="27"></textarea>
                 </label>
               </fieldset>
               <div class="order-forms__footer">
