@@ -77,6 +77,8 @@
   font-size: 17px;
   line-height: 24px;
   margin-left: 91px;
+  margin-bottom: 26px;
+  margin-top: 21px;
 
   &::before {
     content: "";
@@ -84,8 +86,18 @@
     background-image: url("../img/video.svg");
     width: 32px;
     height: 22px;
-    top: 10px;
+    top: 30px;
     left: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/play.svg");
+    width: 100px;
+    height: 76px;
+    top: 125px;
+    left: 85px;
   }
 }
 
@@ -123,6 +135,10 @@
     grid-template-columns: 333px 334px;
   }
 
+  .card-footer {
+    display: flex;
+  }
+
   .catalog__item {
     margin-bottom: 54px;
   }
@@ -140,12 +156,22 @@
   }
 
   .production__wrapper {
-    width: 91%;
+    width: 100%;
     max-width: 1150px;
   }
 
   .production__title {
     margin-top: 41px;
+    margin-bottom: 24px;
+
+    &::before {
+      top: 490px;
+    }
+
+    &::after {
+      top: 200px;
+      left: 270px;
+    }
   }
 
   .production__order-product {
@@ -156,12 +182,14 @@
   }
 
   .production__description {
-    margin: 24px 42px 47px;
+    margin: 0 42px 40px;
     font-size: 15px;
+    padding: 0;
   }
 
   .production_img-tablet {
     display: block;
+    order: -1;
   }
 
   .production_image-mobile {
@@ -170,6 +198,10 @@
 
   .card-content__description {
     font-size: 15px;
+  }
+
+  .card-footer__price {
+    margin-right: 134px;
   }
 }
 
@@ -192,14 +224,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    &:hover {
+      border: 1px solid hsl(0, 0%, 93%);
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .catalog__item {
     width: 316px;
-  }
-
-  .catalog__wrapper {
-    margin-left: 50px;
+    margin-bottom: 0;
   }
 
   .card-footer.card-content {
@@ -215,9 +249,9 @@
   }
 
   .production__wrapper {
-    margin-left: 50px;
     display: grid;
     grid-template-columns: 1fr 367px;
+    width: 100%;
   }
 
   .production_img-tablet {
@@ -247,10 +281,27 @@
     }
   }
 
+  .production__title:hover::after {
+    width: 121px;
+    height: 91px;
+    background-image: url("../img/play_hover.svg");
+  }
+
   .production__description {
     margin-left: 79px;
     margin-top: 27px;
     padding: 0;
     margin-bottom: 51px;
+  }
+
+  .card-footer__add-cart-icon {
+
+    &:hover {
+      fill: rgba(99, 209, 187, 1);
+    }
+
+    &:disabled {
+      fill: rgba(99, 209, 187, 0.2);
+    }
   }
 }

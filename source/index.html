@@ -61,7 +61,7 @@
     <main class="main-container">
       <div class="main-container--page">
       <section class="top-menu top-menu-main-page">
-        <div class="top-menu__wrapper">
+        <div class="top-menu__wrapper top-menu-main__wrapper">
           <div class="top-menu-main-page__wrapper">
             <ul class="top-menu__list">
               <li class="top-menu__item">
@@ -154,15 +154,11 @@
       </section>
       <section class="feedback">
           <h2 class="feedback__title title">Отзывы</h2>
-            <div class="feedback__list">
-                <blockquote class="feedback__item">
                   <p class="feedback__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
                     я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                   </p>
-                    <cite class="feedback__author-info">Анастасия Красильникова</cite>
+                    <span class="feedback__author-info">Анастасия Красильникова</span>
                     <p class="feedback__author-email">@misssssiskras</p>
-                </blockquote>
-              </div>
               <div class="feedback_slider">
                 <button class="feedback__prev" type="button">
                 <svg class="feedback__prev-icon" aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/></svg>
@@ -249,19 +245,16 @@
             <p class="modal-order-content__description">Выберите размер:</p>
             <form class="modal-order-content__modal-form modal-form" method="post" action="https://echo.htmlacademy.ru/">
                 <div class="modal-form_form-radio">
-                    <label class="modal-form_input">S
-                        <input class="modal-form_input" type="radio" name="radio" value="S" checked>
-                    </label>
+                  <input id="S" class="modal-form_input" type="radio" name="radio" value="S" checked>
+                    <label for="S" class="modal-form_control">S</label>
                 </div>
                 <div class="modal-form_form-radio">
-                    <label class="modal-form_input">M
-                        <input class="modal-form_input" type="radio" name="radio" value="M" >
-                    </label>
+                  <input id="M" class="modal-form_input" type="radio" name="radio" value="M">
+                    <label for="M" class="modal-form_control">M</label>
                 </div>
                 <div class="modal-form_form-radio">
-                    <label class="modal-form_input">L
-                        <input class="modal-form_input" type="radio" name="radio" value="L" >
-                    </label>
+                  <input id="L" class="modal-form_input" type="radio" name="radio" value="L" >
+                    <label for="L" class="modal-form_control">L</label>
                 </div>
             </form>
             <button class="button modal-button" type="button">Добавить</button>

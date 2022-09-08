@@ -2,6 +2,8 @@
 
 .main-footer {
   background-color: rgba(241, 241, 241, 1);
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main-footer__logo {
@@ -77,6 +79,14 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  .main-footer {
+    width: 768px;
+  }
+
+  .main-footer__copyright {
+    margin-bottom: 0;
+  }
+
   .main-footer__logo {
     display: block;
     margin-left: 50px;
@@ -102,9 +112,12 @@
 }
 
 @media (min-width: variables.$desktop-width) {
+  .main-footer {
+    width: 1150px;
+  }
+
   .main-footer__copyright {
     margin-left: 310px;
-    margin-bottom: 0;
   }
 
   .main-footer__logo {
@@ -112,6 +125,7 @@
   }
 
   .main-footer__logo-icon {
+
     &:hover {
       fill: hsl(171, 50%, 52%);
     }

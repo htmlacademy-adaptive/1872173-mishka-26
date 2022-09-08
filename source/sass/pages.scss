@@ -11,7 +11,7 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
-  min-width: 320px;
+  min-width: 280px;
 }
 
 .main-container {
@@ -20,7 +20,7 @@
 
 .main-container--page {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
 }
 
 .inner-page__body {
@@ -28,7 +28,7 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
-  min-width: 320px;
+  min-width: 280px;
 }
 
 .inner-container {
@@ -37,16 +37,16 @@
 
 .inner-container--page {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .main-container--page {
-    width: 768px;
+    width: 668px;
   }
 
   .inner-container--page {
-    width: 768px;
+    width: 668px;
   }
 }
 

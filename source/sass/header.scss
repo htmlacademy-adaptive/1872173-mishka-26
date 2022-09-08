@@ -30,13 +30,13 @@
 }
 
 .main-header__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 1);
 }
 
 .main-navigation__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -110,15 +110,13 @@
 
   .main-header__logo-table-link {
     display: block;
-    width: 371px;
+    width: 320px;
     padding: 22px 0 20px;
   }
 
   .main-header__wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 680px;
-    margin: 0 auto;
+    width: 668px;
   }
 
   .main-navigation__toggle {
@@ -199,12 +197,14 @@
   }
 
   .main-header__wrapper {
-    width: 1000px;
+    width: 1150px;
     margin: 0 auto;
   }
 
   .main-navigation--desktop {
     display: flex;
+    width: 1150px;
+    margin-left: 54px;
   }
 
   .main-navigation__link-text {
