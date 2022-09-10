@@ -20,7 +20,8 @@
 
 .main-container--page {
   margin: 0 auto;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
 }
 
 .inner-page__body {
@@ -29,6 +30,7 @@
   min-height: 100%;
   margin: 0;
   min-width: 280px;
+  width: 100%;
 }
 
 .inner-container {
@@ -37,25 +39,25 @@
 
 .inner-container--page {
   margin: 0 auto;
-  width: 280px;
+  max-width: 280px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .main-container--page {
-    width: 668px;
+    max-width: 668px;
   }
 
   .inner-container--page {
-    width: 668px;
+    max-width: 668px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main-container--page {
-    width: 1050px;
+    max-width: 1050px;
   }
 
   .inner-container--page {
-    width: 1050px;
+    max-width: 1050px;
   }
 }

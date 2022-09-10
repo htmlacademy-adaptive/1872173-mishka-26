@@ -73,11 +73,7 @@
   }
 
   .product-options__list:hover {
-    margin-top: -5px;
-  }
-
-  .product-options__link:hover {
-    padding-bottom: 40px;
+    transform: translateY(-5px);
   }
 
   .product-options__link::before {

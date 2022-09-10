@@ -85,6 +85,9 @@
 
   .main-footer__copyright {
     margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 121px;
+    margin-right: 50px;
   }
 
   .main-footer__logo {
@@ -103,12 +106,6 @@
     display: flex;
     width: 142px;
   }
-
-  .main-footer__copyright {
-    margin-top: 0;
-    margin-left: 121px;
-    margin-right: 50px;
-  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -125,7 +122,6 @@
   }
 
   .main-footer__logo-icon {
-
     &:hover {
       fill: hsl(171, 50%, 52%);
     }

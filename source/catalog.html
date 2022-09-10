@@ -203,6 +203,29 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-container__modal modal-order">
+        <section class="modal-order-content">
+          <h2 class="modal-order-content__title">Добавить в корзину</h2>
+          <p class="modal-order-content__description">Выберите размер:</p>
+          <form class="modal-order-content__modal-form modal-form" method="post" action="https://echo.htmlacademy.ru/">
+              <div class="modal-form_form-radio">
+                <input id="S" class="modal-form_input" type="radio" name="radio" value="S" checked>
+                  <label for="S" class="modal-form_control">S</label>
+              </div>
+              <div class="modal-form_form-radio">
+                <input id="M" class="modal-form_input" type="radio" name="radio" value="M">
+                  <label for="M" class="modal-form_control">M</label>
+              </div>
+              <div class="modal-form_form-radio">
+                <input id="L" class="modal-form_input" type="radio" name="radio" value="L" >
+                  <label for="L" class="modal-form_control">L</label>
+              </div>
+          </form>
+          <button class="button modal-button" type="button">Добавить</button>
+        </section>
+      </div>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

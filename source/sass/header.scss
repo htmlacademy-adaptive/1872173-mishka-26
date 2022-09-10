@@ -184,11 +184,11 @@
   }
 
   .main-header__logo-image:hover {
-    fill: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
   }
 
   .main-header__logo-image:disabled {
-    fill: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
 
   .site-list {
