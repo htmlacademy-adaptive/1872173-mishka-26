@@ -38,11 +38,17 @@
   text-align: center;
 }
 
+.feedback_slider {
+  display: flex;
+}
+
 .feedback__prev,
 .feedback__next {
-  border: none;
+  border: 1px solid hsl(0, 0%, 93%);
+  outline: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 13px 48px 13px 38px;
 }
 
 .feedback__prev-icon,
@@ -80,6 +86,15 @@
     margin-bottom: 61px;
   }
 
+  .feedback__prev,
+  .feedback__next {
+    border: none;
+    padding: 0;
+  }
+
+  .feedback__prev {
+    margin-right: 30px;
+  }
 
   .feedback_slider {
     display: flex;
@@ -106,13 +121,12 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .feedback__description {
     margin-left: 185px;
     padding: 0;
   }
 
-  .feedback__title  {
+  .feedback__title {
     margin-left: 185px;
   }
 

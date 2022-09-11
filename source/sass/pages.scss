@@ -16,9 +16,10 @@
 
 .main-container {
   flex-grow: 1;
+  position: relative;
 }
 
-.main-container--page {
+.main-container--wrapper {
   margin: 0 auto;
   max-width: 280px;
   width: 100%;
@@ -30,34 +31,21 @@
   min-height: 100%;
   margin: 0;
   min-width: 280px;
-  width: 100%;
 }
 
 .inner-container {
   flex-grow: 1;
-}
-
-.inner-container--page {
-  margin: 0 auto;
-  max-width: 280px;
+  position: relative;
 }
 
 @media (min-width: variables.$tablet-width) {
-  .main-container--page {
-    max-width: 668px;
-  }
-
-  .inner-container--page {
+  .main-container--wrapper {
     max-width: 668px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-container--page {
-    max-width: 1050px;
-  }
-
-  .inner-container--page {
+  .main-container--wrapper {
     max-width: 1050px;
   }
 }

@@ -5,19 +5,14 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  margin: 17px 30px 30px;
 }
 
 .order-forms__group {
   border: none;
-  margin: 0;
   padding: 0;
   position: relative;
 }
 
-.order-forms__wrapper {
-  margin: 0 30px;
-}
 
 .order-forms__radio::after {
   content: "";
@@ -48,7 +43,6 @@
 }
 
 .order-forms__list {
-  margin: 0;
   padding: 0;
   padding-top: 18px;
 }
@@ -111,7 +105,6 @@
 }
 
 .order-forms__list-bio {
-  margin: 0;
   padding: 0;
   margin-bottom: 13px;
 
@@ -257,24 +250,12 @@
   margin-bottom: 55px;
 }
 
-.top-menu-inner__wrapper {
-  margin-bottom: 17px;
-}
-
 .phone-input {
   margin-bottom: 34px;
   margin-top: 64px;
 }
 
 @media (min-width: variables.$tablet-width) {
-  .top-menu-inner__wrapper {
-    margin-bottom: 54px;
-  }
-
-  .order-forms__wrapper {
-    margin: 0 50px;
-  }
-
   .order-forms__description {
     font-size: 17px;
     line-height: 30px;
@@ -292,6 +273,7 @@
   .order-forms__title {
     padding: 0;
     width: 96px;
+    padding-left: 50px;
   }
 
   .order-forms__title--color {
@@ -304,7 +286,7 @@
 
   .order-forms__group--bio {
     margin-top: 66px;
-    }
+  }
 
   .order-forms__item {
     margin-bottom: 58px;
@@ -358,7 +340,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 114px;
     margin-top: 66px;
-    margin-right: 36px;
   }
 
   .item-checkbox {
@@ -378,10 +359,12 @@
   .order-forms__title--contacts {
     margin-top: 65px;
     margin-bottom: 63px;
+    padding: 0;
   }
 
   .order-forms__title--more {
     margin-top: 40px;
+    padding: 0;
   }
 
   .order-forms__footer {
@@ -493,11 +476,14 @@
   .bio-info {
     margin-bottom: 52px;
   }
+
+  .order-forms__title--email {
+    padding: 0;
+  }
 }
+
 @media (min-width: variables.$desktop-width) {
-
   .customer-information__field {
-
     &:hover {
       border-color: rgba(98, 209, 186, 1);
     }

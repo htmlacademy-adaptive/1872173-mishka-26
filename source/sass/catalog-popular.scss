@@ -1,7 +1,7 @@
 @use "variables.scss";
 
 .catalog-popular__wrapper {
-  margin: 0 30px 73px;
+  margin-bottom: 73px;
 }
 
 .catalog-popular__title {
@@ -40,7 +40,9 @@
   display: grid;
   grid-template-columns: 74px 1fr;
   column-gap: 33px;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  padding-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -69,8 +71,8 @@
 
 @media (min-width: variables.$tablet-width) {
   .catalog-popular__wrapper {
-    margin: 0 0 124px;
     position: relative;
+    margin-bottom: 125px;
   }
 
   .catalog-popular__title-container {
@@ -114,16 +116,6 @@
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 334px 404px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 772px;
-      height: 17px;
-      background-image: url("../img/zigzag-line-desktop.svg");
-      top: 580px;
-      left: -15px;
-    }
   }
 
   .catalog-popular__footer {
@@ -174,15 +166,5 @@
 
   .catalog-popular__item {
     margin-bottom: 60px 0 124px;
-  }
-
-  .catalog-popular__container::after {
-      content: "";
-      position: absolute;
-      width: 1050px;
-      height: 23px;
-      background-image: url("../img/zigzag-line.svg");
-      top: 690px;
-      left: 15px;
   }
 }
