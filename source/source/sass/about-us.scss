@@ -1,0 +1,76 @@
+@use "variables.scss";
+
+.about-us {
+  margin-top: 73px;
+  margin-bottom: 53px;
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__item {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 83px;
+}
+
+.about-us__item:first-child {
+  padding-top: 82px;
+}
+
+.about-us__item:last-child {
+  padding-bottom: 0;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .title.about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: grid;
+    grid-template-columns: 265px 325px;
+    gap: 110px 70px;
+  }
+
+  .about-us__item {
+    padding: 0;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item:first-child {
+    padding-top: 0;
+  }
+
+  .about-us__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .about-us__item--benefit-two {
+    grid-row: 3 / 2;
+  }
+
+  .about-us__item--benefit-three {
+    grid-row: 3 / 4;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .about-us__list {
+    padding-left: 143px;
+  }
+
+  .title.about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
