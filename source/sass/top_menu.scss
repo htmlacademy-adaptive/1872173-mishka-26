@@ -6,9 +6,13 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
-  padding: 73px 30px 120px 30px;
+  padding: 73px 30px 120px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
+}
+
+.inner-title {
+  padding: 73px 0;
 }
 
 .top-menu__list {
@@ -23,11 +27,67 @@
   display: none;
 }
 
+.top-menu-main-page {
+  background-color: rgba(249, 249, 249, 1);
+}
+
+.top-menu-inner-page {
+  background-color: rgba(241, 241, 241, 1);
+}
+
+.top-menu-main__wrapper {
+  background-image: url("../img/toy_house_mobile.jpg");
+  height: 283px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+}
+
+.top-menu-inner__wrapper {
+  margin-bottom: 17px;
+}
+
 @media (min-width: variables.$tablet-width) {
+  .top-menu-main__wrapper {
+    background-image: url("../img/toy_house_tablet.jpg");
+    height: 627px;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+  }
+
+  .top-menu-main-page::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    top: 718px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+  }
+
+  .top-menu-inner-page::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    top: 240px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+  }
+
+  .top-menu-inner__wrapper {
+    margin-bottom: 54px;
+  }
+
   .top-menu__title {
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+    padding: 154px 50px 372px;
+  }
+
+  .inner-title {
+    padding-bottom: 63px;
+    padding-top: 101px;
   }
 
   .top-menu-main-page__wrapper--desktop {
@@ -36,15 +96,14 @@
 
   .top-menu-main-page__wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+    flex-wrap: wrap;
   }
 
   .top-menu__list {
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
   }
 
   .top-menu__link {
@@ -60,18 +119,47 @@
     font-size: 15px;
     line-height: 24px;
     color: rgba(68, 68, 68, 1);
+    margin-top: 20px;
   }
 
   .top-menu__item-order {
     display: block;
+    margin-left: auto;
+    margin-top: 20px;
   }
 
   .top-menu__item {
     list-style-type: none;
+
+    &:first-child {
+      margin-right: 37px;
+    }
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .top-menu-inner__wrapper {
+    margin-bottom: 98px;
+  }
+
+  .top-menu-main-page::after {
+    top: 715px;
+    height: 34px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+  }
+
+  .top-menu-inner-page::after {
+    height: 34px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+  }
+
+  .top-menu-main__wrapper {
+    background-image: url("../img/toy_house_desktop.jpg");
+    height: 627px;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+  }
+
   .top-menu__title {
     font-weight: 700;
     font-size: 53px;
@@ -84,15 +172,10 @@
 
   .top-menu-main-page__wrapper {
     display: flex;
-    width: 1000px;
     justify-content: space-between;
   }
 
   .top-menu-main-page__wrapper--desktop {
-    display: block;
-  }
-
-  .top-menu__item-order {
     display: block;
   }
 
@@ -103,6 +186,12 @@
   .top-menu-main-page__wrapper--desktop__list {
     margin: 0;
     padding: 0;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .top-menu-main-page__wrapper--desktop__item:first-child {
+    margin-right: 41px;
   }
 
   .top-menu-main-page__wrapper--desktop__link {
@@ -111,6 +200,14 @@
     font-size: 15px;
     line-height: 24px;
     color: rgba(0, 0, 0, 1);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:disabled {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .top-menu__link--free_order {
@@ -119,10 +216,5 @@
     line-height: 24px;
     color: rgba(68, 68, 68, 1);
     text-decoration: none;
-  }
-
-  .top-menu__wrapper {
-    max-width: 1150px;
-    padding: 0 51px;
   }
 }

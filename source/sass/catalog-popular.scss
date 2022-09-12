@@ -1,7 +1,11 @@
 @use "variables.scss";
 
-.catalog-popular {
-  margin-top: 31px;
+.catalog-popular__wrapper {
+  margin-bottom: 73px;
+}
+
+.catalog-popular__title {
+  margin-bottom: 3px;
 }
 
 .catalog-popular__period {
@@ -10,7 +14,6 @@
   font-size: 17px;
   line-height: 20px;
   margin: 0;
-  padding-bottom: 17px;
   text-transform: uppercase;
 }
 
@@ -19,6 +22,9 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 24px;
 }
 
 .catalog-popular__item {
@@ -27,6 +33,25 @@
   font-size: 15px;
   line-height: 20px;
   list-style-type: none;
+  margin-bottom: 41px;
+}
+
+.catalog-popular__wrapper-items {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  column-gap: 33px;
+  margin-bottom: 11px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  padding-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-popular__item-variant {
+  display: block;
+  margin: 0;
 }
 
 .price {
@@ -34,24 +59,43 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  margin: 25px 0 24px;
+  text-align: center;
 }
 
+.catalog-popular__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @media (min-width: variables.$tablet-width) {
-  .catalog-popular__title-container {
-    display: flex;
-    justify-content: space-between;
+  .catalog-popular__wrapper {
+    position: relative;
+    margin-bottom: 125px;
   }
 
-  .title.catalog-popular__title {
+  .catalog-popular__title-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-popular__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 37px;
   }
 
   .catalog-popular__period {
     width: 100px;
     text-align: center;
+    margin-left: 132px;
+    line-height: 17px;
+    padding-top: 6px;
+  }
+
+  .catalog-popular__item {
+    margin: 48px 0 70px;
   }
 
   .catalog-popular__image {
@@ -60,6 +104,8 @@
 
   .catalog-popular__description {
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .catalog-popular__container {
@@ -73,49 +119,52 @@
   }
 
   .catalog-popular__footer {
-    display: flex;
-    flex-direction: column;
+    width: 300px;
   }
 
-  .catalog-popular-button {
-    align-self: start;
+  .price {
+    margin-top: 0;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+  .catalog-popular__container {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: none;
+    margin: 0;
+    margin-left: 135px;
+  }
+
   .catalog-popular__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 61px 100px 1fr;
     background-image: url("../img/knitted_baskets-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 525px 636px;
+    margin-bottom: 164px;
   }
 
   .catalog-popular__title-container {
-    align-self: flex-start;
-    justify-content: flex-start;
     grid-row: 2;
+    margin-top: 61px;
   }
 
   .catalog-popular__period {
     order: -1;
+    margin: 0;
   }
 
-  .catalog-popular__container {
-    grid-column: 1;
-    background-image: none;
-    grid-row: 3;
-  }
-
-  .title.catalog-popular__title {
+  .catalog-popular__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 35px;
+    margin-left: 32px;
   }
 
   .catalog-popular__item {
-    padding-top: 60px;
-    padding-bottom: 124px;
+    margin-bottom: 60px 0 124px;
   }
 }
