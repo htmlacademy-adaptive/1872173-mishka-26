@@ -1,0 +1,55 @@
+@use "variables.scss";
+
+.main-footer {
+  margin-top: 39px;
+}
+
+.main-footer__social {
+  padding-bottom: 58px;
+}
+
+.main-footer__copyright {
+  padding-bottom: 37px;
+}
+
+.inner-footer {
+  margin-top: 55px;
+  background-color: rgba(241, 241, 241, 1);
+}
+
+.inner-footer__social {
+  margin-top: 25px;
+  padding-bottom: 58px;
+}
+
+.inner-footer__copyright {
+  padding-bottom: 37px;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-footer__logo {
+    display: block;
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social__list {
+    display: flex;
+    width: 142px;
+  }
+
+  .social__item {
+    list-style-type: none;
+  }
+}
+
+/*@media (min-width: variables.$desktop-width) {
+
+}*/
