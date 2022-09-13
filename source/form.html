@@ -106,7 +106,8 @@
         <p class="order-forms__description main-container--wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-forms__variants" method="post" action="#">
               <fieldset class="order-forms__group">
-                <div class="order-forms__title--wrapper">
+                <div class="main-container--wrapper order-forms__group--wrapper">
+                  <div class="order-forms__title--wrapper">
                   <legend class="order-forms__title">Тип</legend>
                 </div>
                 <ul class="order-forms__list order-forms__radio  main-container--wrapper">
@@ -125,9 +126,11 @@
                     </label>
                   </li>
                 </ul>
+                </div>
               </fieldset>
             <fieldset class="order-forms__group">
-              <div class="order-forms__title--wrapper">
+              <div class="main-container--wrapper order-forms__group--wrapper">
+                <div class="order-forms__title--wrapper">
                 <legend class="order-forms__title order-forms__title--color">Цвет</legend>
               </div>
               <ul class="order-forms__list order-forms__checkbox-list main-container--wrapper">
@@ -174,9 +177,11 @@
                   </label>
                 </li>
               </ul>
+              </div>
             </fieldset>
             <fieldset class="order-forms__group order-forms__group--bio">
-              <div class="order-forms__title--wrapper order-forms__title--wrapper-bio">
+              <div class="main-container--wrapper order-forms__group--wrapper">
+                <div class="order-forms__title--wrapper order-forms__title--wrapper-bio">
                 <legend class="order-forms__title">ФИО</legend>
               </div>
               <ul class="order-forms__list-bio main-container--wrapper">
@@ -199,16 +204,23 @@
                   </label>
                 </li>
               </ul>
+              </div>
             </fieldset>
               <fieldset class="order-forms__group bio-info bio-info--contacts ">
                 <div class="main-container--wrapper">
                   <label class="order-forms  customer-information_phone customer-information__wrapper">
                     <legend class="order-forms__title order-forms__title--contacts">Тел</legend>
-                  <input class="customer-information__field phone-input " type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <input class="customer-information__field phone-input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <svg class="phone-input--icon" fill="currentColor" width="25" height="24">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
                 </label>
                 <label class="order-forms customer-information_email customer-information__wrapper">
                     <legend class="order-forms__title order-forms__title--email">E-mail</legend>
                   <input class="customer-information__field email-input" type="text" name="email" placeholder="Ваш Email*" required>
+                  <svg class="email-input--icon" width="32" height="21" fill="currentColor">
+                    <use xlink:href="img/sprite.svg#email"></use>
+                  </svg>
               </label>
                 </div>
               </fieldset>

@@ -7,17 +7,29 @@
 
 .catalog__item {
   list-style-type: none;
+  margin-bottom: 30px;
 }
 
 .card-content {
   border: 1px solid rgba(236, 236, 236, 1);
 }
 
+.card-content--wrapper {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog--wrapper {
+  margin-bottom: 30px;
+}
+
 .card-content__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin: 27px 5px 6px 28px;
+  margin: 0;
+  margin-bottom: 6px;
 }
 
 .card-content__description {
@@ -26,21 +38,19 @@
   line-height: 30px;
   color: rgba(68, 68, 68, 1);
   margin: 0;
-  margin-left: 28px;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
 }
 
 .card-footer {
   position: relative;
   display: flex;
-  margin-left: 28px;
-  margin-bottom: 26px;
   border: none;
+  justify-content: space-between;
 
   &::before {
     content: "";
     position: absolute;
-    width: 204px;
+    width: 95%;
     height: 1px;
     background: rgba(236, 236, 236, 1);
     top: -22px;
@@ -52,7 +62,6 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  margin-right: 90px;
 }
 
 
@@ -129,8 +138,9 @@
     grid-template-columns: 333px 334px;
   }
 
-  .card-footer {
-    display: flex;
+  .card-content__description {
+    margin-bottom: 194px;
+    font-size: 15px;
   }
 
   .catalog__item {
@@ -176,14 +186,6 @@
   .production_image-mobile {
     display: none;
   }
-
-  .card-content__description {
-    font-size: 15px;
-  }
-
-  .card-footer__price {
-    margin-right: 134px;
-  }
 }
 
 @media (min-width: variables.$desktop-width) {
@@ -191,6 +193,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 51px;
+  }
+
+  .catalog--wrapper {
+    margin-bottom: 50px;
   }
 
   .card-content {
@@ -215,10 +221,6 @@
 
   .card-footer__price {
     margin-right: 122px;
-  }
-
-  .card-content__description {
-    margin-bottom: 39px;
   }
 
   .production__wrapper {
