@@ -5,17 +5,9 @@
 }
 
 .about-us__wrapper {
-  margin-bottom: 53px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 6px;
-    background-image: url("../img/zigzag-line-mobile.svg");
-    top: -30px;
-    left: 0;
-  }
+  padding-bottom: 58px;
+  padding-top: 36px;
+  padding-left: 5px;
 }
 
 .about-us__list {
@@ -49,7 +41,8 @@
   background-image: url("../img/icon-1.svg");
   width: 33px;
   height: 38px;
-  top: 16px;
+  top: 28px;
+  left: 8px;
 }
 
 .about-us__item--benefit-two::before {
@@ -68,6 +61,7 @@
   width: 34px;
   height: 27px;
   top: 280px;
+  left: 6px;
 }
 
 .about-us__item--benefit-four::before {
@@ -77,6 +71,7 @@
   width: 35px;
   height: 34px;
   top: 400px;
+  left: 2px;
 }
 
 .about-us__item--benefit-five::before {
@@ -86,6 +81,7 @@
   width: 55px;
   height: 23px;
   top: 524px;
+  left: -6px;
 }
 
 .about-us__item--benefit-six::before {
@@ -95,29 +91,25 @@
   width: 33px;
   height: 32px;
   top: 645px;
+  left: 2px;
 }
 
 @media (min-width: variables.$tablet-width) {
   .about-us__wrapper {
-    margin-bottom: 163px;
-
-    &::before {
-      background-image: url("../img/zigzag-line-tablet.svg");
-      height: 17px;
-      top: -60px;
-    }
+    padding-bottom: 83px;
+    padding-top: 74px;
   }
 
   .title.about-us__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 97px;
+    margin-bottom: 98px;
   }
 
   .about-us__list {
     display: grid;
     grid-template-columns: 265px 325px;
-    gap: 110px 70px;
+    gap: 111px 70px;
   }
 
   .about-us__item {
@@ -143,50 +135,73 @@
   }
 
   .about-us__item--benefit-one::before {
-    top: -55px;
+    top: -57px;
   }
 
   .about-us__item--benefit-two::before {
     top: 100px;
+    left: 1px;
   }
 
   .about-us__item--benefit-three::before {
-    top: 250px;
+    top: 260px;
+    left: 8px;
   }
 
   .about-us__item--benefit-four::before {
-    top: -55px;
+    top: -53px;
+    left: 336px;
   }
 
   .about-us__item--benefit-five::before {
-    top: 100px;
+    top: 103px;
+    left: 329px;
   }
 
   .about-us__item--benefit-six::before {
-    top: 250px;
+    top: 256px;
+    left: 336px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .about-us__wrapper {
-    margin-bottom: 168px;
-
-    &::before {
-      background-image: url("../img/zigzag-line-desktop.svg");
-      height: 23px;
-      top: -90px;
-      width: 1050px;
-      left: 50px;
-    }
+    padding-bottom: 90px;
+    padding-top: 90px;
   }
 
   .about-us__list {
-    padding-left: 143px;
+    padding-left: 183px;
+    gap: 111px 82px;
   }
 
   .title.about-us__title {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 140px;
+    padding-left: 180px;
+  }
+
+  .about-us__item--benefit-one::before {
+    left: 190px;
+  }
+
+  .about-us__item--benefit-two::before {
+    left: 181px;
+  }
+
+  .about-us__item--benefit-three::before {
+    left: 189px;
+  }
+
+  .about-us__item--benefit-four::before {
+    left: 535px;
+  }
+
+  .about-us__item--benefit-five::before {
+    left: 526px;
+  }
+
+  .about-us__item--benefit-six::before {
+    left: 534px;
   }
 }
