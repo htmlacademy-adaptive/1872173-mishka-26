@@ -216,7 +216,6 @@
   height: 24px;
   top: 30px;
   right: 6px;
-  fill: rgba(0, 0, 0, 0.2);
 }
 
 .customer-information_email::after {
@@ -236,7 +235,6 @@
   height: 21px;
   top: 143px;
   right: 0;
-  fill: rgba(0, 0, 0, 0.2);
 }
 
 .order-forms__more::after {
@@ -609,7 +607,7 @@
 
 
   .order-forms__checkbox-list {
-    grid-template-columns: 250px 280px 280px;
+    grid-template-columns: 260px 260px 250px;
     margin-left: 70px;
     column-gap: 0;
   }
@@ -646,12 +644,12 @@
   }
 
   .email-input__icon {
-    top: 175px;
-    right: 130px;
+    top: 123px;
+    right: 171px;
   }
 
   .phone-input__icon {
-    right: 130px;
+    right: 175px;
   }
 
   .order-forms__description {
@@ -707,5 +705,9 @@
 
   .order-forms__note {
     margin-right: 170px;
+  }
+
+  .checkbox__input-text {
+    padding-left: 33px;
   }
 }
