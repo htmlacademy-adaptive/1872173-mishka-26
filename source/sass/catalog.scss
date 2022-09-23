@@ -123,7 +123,7 @@
   display: none;
 }
 
-.pruduction__video {
+.pruduction-video {
   position: relative;
   max-width: max-content;
 }
@@ -211,16 +211,13 @@
     padding: 0;
   }
 
-  .production_img-tablet {
-    display: block;
+  .production-image {
     order: -1;
+    width: 100%;
+    height: auto;
   }
 
-  .production_image-mobile {
-    display: none;
-  }
-
-  .pruduction__video {
+  .pruduction-video {
     order: -1;
   }
 }
@@ -333,7 +330,7 @@
     }
   }
 
-  .pruduction__video {
+  .pruduction-video {
     position: relative;
     max-width: max-content;
     grid-column: 1;

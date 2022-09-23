@@ -41,6 +41,7 @@
   line-height: 16px;
   color: rgba(99, 209, 187, 1);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .order-forms__list {
@@ -56,12 +57,12 @@
   line-height: 18px;
 }
 
-.radio__item:first-child {
+.radio-item:first-child {
   padding-top: 18px;
   margin-bottom: 24px;
 }
 
-.customer-information__field {
+.customer-information-field {
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -125,7 +126,7 @@
   }
 }
 
-.radio__input-text {
+.radio-input-text {
   display: block;
   padding-left: 38px;
 }
@@ -136,7 +137,7 @@
   padding-left: 24px;
 }
 
-.radio__input-icon {
+.radio-input-icon {
   position: absolute;
   top: -5px;
   left: -30px;
@@ -160,7 +161,7 @@
   }
 }
 
-.radio__input[type="radio"]:checked + .radio__input-icon::after {
+.radio-input[type="radio"]:checked + .radio-input-icon::after {
   content: "";
   position: absolute;
   cursor: pointer;
@@ -172,7 +173,7 @@
   left: 11px;
 }
 
-.checkbox__input-icon {
+.checkbox-input-icon {
   position: absolute;
   top: -12px;
   left: -59px;
@@ -190,7 +191,7 @@
   }
 }
 
-.checkbox__input[type="checkbox"]:checked + .checkbox__input-icon::after {
+.checkbox-input[type="checkbox"]:checked + .checkbox-input-icon::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -200,7 +201,7 @@
   height: 18px;
 }
 
-.customer-information_phone::after {
+.customer-information-phone::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -210,7 +211,7 @@
   background-color: rgba(98, 209, 186, 1);
 }
 
-.phone-input__icon {
+.phone-input-icon {
   position: absolute;
   width: 25px;
   height: 24px;
@@ -218,7 +219,7 @@
   right: 6px;
 }
 
-.customer-information_email::after {
+.customer-information-email::after {
   content: "";
   position: absolute;
   width: 182px;
@@ -228,7 +229,7 @@
   background-color: rgba(98, 209, 186, 1);
 }
 
-.email-input__icon {
+.email-input-icon {
   content: "";
   position: absolute;
   width: 32px;
@@ -259,7 +260,7 @@
   padding-top: 16px;
 }
 
-.checkbox__control {
+.checkbox-control {
   padding-left: 0;
 }
 
@@ -277,7 +278,7 @@
   padding-top: 34px;
 }
 
-.bio__item {
+.bio-item {
   margin-top: 21px;
 
   &:first-child {
@@ -301,7 +302,7 @@
     padding-left: 5px;
   }
 
-  .radio__item:first-child {
+  .radio-item:first-child {
     margin-bottom: 55px;
   }
 
@@ -343,14 +344,14 @@
     }
   }
 
-  .checkbox__input-icon {
+  .checkbox-input-icon {
     width: 49px;
     height: 49px;
     left: -49px;
     top: -16px;
   }
 
-  .radio__input-icon {
+  .radio-input-icon {
     width: 46px;
     height: 46px;
     margin: 0;
@@ -358,7 +359,7 @@
     left: -27px;
   }
 
-  .radio__input[type="radio"]:checked + .radio__input-icon::after {
+  .radio-input[type="radio"]:checked + .radio-input-icon::after {
     content: "";
     position: absolute;
     cursor: pointer;
@@ -370,12 +371,12 @@
     left: 14px;
   }
 
-  .checkbox__input-text {
+  .checkbox-input-text {
     display: block;
     padding-left: 35px;
   }
 
-  .checkbox__input[type="checkbox"]:checked + .checkbox__input-icon::after {
+  .checkbox-input[type="checkbox"]:checked + .checkbox-input-icon::after {
     content: "";
     position: absolute;
     top: 14px;
@@ -390,18 +391,18 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 70px;
     margin-top: 46px;
-    margin-left: 120px;
+    margin-left: 20px;
   }
 
   .item-checkbox {
     padding: 0;
   }
 
-  .order-forms__title__wrapper {
+  .order-forms__title-wrapper {
     margin-right: 103px;
   }
 
-  .customer-information__wrapper {
+  .customer-information-wrapper {
     display: flex;
     width: 90%;
   }
@@ -430,16 +431,16 @@
     line-height: 30px;
   }
 
-  .bio-info__contacts {
+  .bio-info-contacts {
     flex-direction: column;
     margin-top: 45px;
   }
 
-  .customer-information_email::after {
+  .customer-information-email::after {
     display: none;
   }
 
-  .customer-information_email {
+  .customer-information-email {
     margin-bottom: 50px;
     width: 100%;
 
@@ -457,7 +458,7 @@
     }
   }
 
-  .customer-information_phone {
+  .customer-information-phone {
     width: 100%;
 
     &::before {
@@ -480,7 +481,7 @@
     }
   }
 
-  .radio__input-text {
+  .radio-input-text {
     padding-left: 29px;
   }
 
@@ -506,13 +507,14 @@
     margin-left: 99px;
   }
 
-  .customer-information__field {
+  .customer-information-field {
     font-size: 19px;
     line-height: 18px;
   }
 
-  .order-forms__title--wrapper-bio {
-    margin-right: 71px;
+  .order-forms__title-wrapper-bio {
+    margin-right: 125px;
+    margin-top: 48px;
   }
 
   .customer-information {
@@ -563,17 +565,17 @@
     padding-left: 3px;
   }
 
-  .bio__item {
+  .bio-item {
     margin-top: 0;
     margin-bottom: 17px;
   }
 
-  .phone-input__icon {
+  .phone-input-icon {
     top: 42px;
     right: 23px;
   }
 
-  .email-input__icon {
+  .email-input-icon {
     top: 123px;
     right: 19px;
   }
@@ -586,11 +588,11 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .customer-information__field {
+  .customer-information-field {
     &:hover {
       border-color: rgba(98, 209, 186, 1);
 
-      & ~ .input__icon {
+      & ~ .input-icon {
         fill: rgba(98, 209, 186, 1);
       }
     }
@@ -599,7 +601,7 @@
 
       border-color: rgba(98, 209, 186, 1);
 
-      & ~ .input__icon {
+      & ~ .input-icon {
         fill: rgba(98, 209, 186, 1);
       }
     }
@@ -608,7 +610,7 @@
 
   .order-forms__checkbox-list {
     grid-template-columns: 260px 260px 250px;
-    margin-left: 70px;
+    margin-left: 35px;
     column-gap: 0;
   }
 
@@ -616,12 +618,12 @@
     width: 700px;
   }
 
-  .customer-information_phone::before {
+  .customer-information-phone::before {
     top: 95px;
     right: 120px;
   }
 
-  .customer-information_email::before {
+  .customer-information-email::before {
     top: 175px;
     right: 115px;
   }
@@ -643,12 +645,12 @@
     padding-top: 0;
   }
 
-  .email-input__icon {
+  .email-input-icon {
     top: 123px;
     right: 171px;
   }
 
-  .phone-input__icon {
+  .phone-input-icon {
     right: 175px;
   }
 
@@ -658,16 +660,16 @@
     width: 700px;
   }
 
-  .radio__input-text {
+  .radio-input-text {
     padding-left: 40px;
   }
 
-  .radio__input-icon {
+  .radio-input-icon {
     top: -17px;
     left: -17px;
   }
 
-  .order-forms__title__wrapper {
+  .order-forms__title-wrapper {
     margin-right: 33px;
   }
 
@@ -675,8 +677,9 @@
     padding-left: 70px;
   }
 
-  .order-forms__title--wrapper-bio {
-    margin-right: 21px;
+  .order-forms__title-wrapper-bio {
+    margin-right: 73px;
+    margin-top: 50px;
   }
 
   .phone-input,
@@ -707,7 +710,7 @@
     margin-right: 170px;
   }
 
-  .checkbox__input-text {
+  .checkbox-input-text {
     padding-left: 33px;
   }
 }
