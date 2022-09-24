@@ -1,0 +1,35 @@
+@use "variables.scss";
+
+.modal-form__form-radio {
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.modal-form__input[type="radio"] {
+  display: none;
+}
+
+.modal-form__form-radio .modal-form__input[type="radio"]:checked + .modal-form__control {
+  border: 2px solid  rgba(99, 209, 187, 1);
+}
+
+.modal-form__control {
+  display: inline-block;
+  cursor: pointer;
+  padding: 18px 32px;
+  background: hsl(0, 0%, 100%);
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  color: #444444;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .modal-form__control {
+    padding: 18px 48px;
+  }
+}
