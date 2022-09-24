@@ -5,6 +5,13 @@
   width: auto;
 }
 
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
 .main-navigation__toggle {
   position: absolute;
   top: -54px;

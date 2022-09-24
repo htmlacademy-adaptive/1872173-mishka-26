@@ -31,7 +31,7 @@
   border-bottom: 1px solid  rgba(98, 209, 186, 1);
 }
 
-.contacts-button {
+.contacts__button {
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -51,14 +51,6 @@
 
 .contacts__details-wrapper {
   display: flex;
-}
-
-.map {
-  display: block;
-  width: 100%;
-  height: 454px;
-  border: none;
-  margin-bottom: 42px;
 }
 
 .contacts__wrapper {
@@ -116,12 +108,7 @@
     margin-left: 27px;
   }
 
-  .map {
-    height: 457px;
-    margin-bottom: 43px;
-  }
-
-  .contacts-button {
+  .contacts__button {
     padding: 12px 39px 13px;
   }
 }
@@ -168,15 +155,7 @@
     margin-bottom: 37px;
   }
 
-  .map {
-    width: 527px;
-    height: 457px;
-    margin-bottom: 0;
-    grid-column: 2;
-    grid-row: 1/4;
-  }
-
-  .contacts-button {
+  .contacts__button {
     margin-left: 182px;
     margin-top: 23px;
   }

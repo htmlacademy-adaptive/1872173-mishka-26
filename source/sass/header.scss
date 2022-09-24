@@ -45,12 +45,6 @@
   display: none;
 }
 
-.main-navigation__list {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .user-list__search-icon {
   padding-right: 22px;
   color: rgba(0, 0, 0, 1);
@@ -88,7 +82,7 @@
   padding-right: 4px;
 }
 
-.knitting-link {
+.main-navigation__link--knitting-link {
   padding-left: 6px;
 }
 

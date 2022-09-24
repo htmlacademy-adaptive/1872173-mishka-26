@@ -16,6 +16,7 @@
 @use "top_menu.scss";
 @use "forms.scss";
 @use "main_nav.scss";
+@use "map.scss";
 
 .visually-hidden {
   @include mixin.visually-hidden;
