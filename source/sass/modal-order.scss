@@ -1,0 +1,47 @@
+@use "variables.scss";
+
+.modal-order-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid hsl(0, 0%, 78%);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal-order-content__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 28px 85px 16px;
+  margin: 0;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.modal-order-content__description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.modal-order-content__modal-form {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .modal-order-content__title {
+    width: max-content;
+    padding: 37px 105px 11px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-order-content__description {
+    font-size: 17px;
+  }
+}
