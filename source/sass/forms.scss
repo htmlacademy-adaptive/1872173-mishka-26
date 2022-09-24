@@ -14,6 +14,9 @@
   margin-top: 29px;
 }
 
+.inner-form-wrapper {
+  margin-bottom: 18px;
+}
 
 .order-forms__radio::after {
   content: "";
@@ -295,6 +298,10 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  .inner-form-wrapper {
+    margin-bottom: 79px;
+  }
+
   .order-forms__description {
     font-size: 17px;
     line-height: 30px;
@@ -584,6 +591,10 @@
     width: max-content;
     margin-bottom: 20px;
     padding: 17px 30px 17px;
+  }
+
+  .inner-title-form {
+    padding-left: 56px;
   }
 }
 
