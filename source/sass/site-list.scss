@@ -1,0 +1,39 @@
+@use "variables.scss";
+
+.site-list__item {
+  list-style-type: none;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .site-list {
+    display: flex;
+    width: 450px;
+  }
+
+  .site-list__item {
+    position: relative;
+    margin-right: 71px;
+
+    &:not(:first-child)::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0.1;
+      height: 92px;
+      width: 1px;
+      top: 0;
+      left: -35px;
+    }
+  }
+}
