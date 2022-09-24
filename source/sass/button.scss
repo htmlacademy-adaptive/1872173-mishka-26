@@ -1,3 +1,5 @@
+@use "variables.scss";
+
 .button {
   color: rgba(68, 68, 68, 1);
   background-color: rgba(255, 255, 255, 1);
@@ -9,9 +11,21 @@
   padding: 16px 20px;
   text-decoration: none;
   cursor: pointer;
+  text-transform: uppercase;
 
   &:hover {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(68, 68, 68, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(68, 68, 68, 1);
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .button {
+    font-size: 17px;
   }
 }

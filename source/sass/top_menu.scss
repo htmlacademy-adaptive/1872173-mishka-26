@@ -6,7 +6,7 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
-  padding: 73px 30px 120px;
+  padding: 73px 0 120px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
 }
@@ -23,7 +23,7 @@
   display: none;
 }
 
-.top-menu-main-page__wrapper--desktop {
+.top-menu-main-page-wrapper-desktop {
   display: none;
 }
 
@@ -35,19 +35,23 @@
   background-color: rgba(241, 241, 241, 1);
 }
 
-.top-menu-main__wrapper {
+.top-menu-main-wrapper {
   background-image: url("../img/toy_house_mobile.jpg");
   height: 283px;
   background-position: 50% 20%;
   background-repeat: no-repeat;
 }
 
-.top-menu-inner__wrapper {
-  margin-bottom: 17px;
+.top-menu-inner-wrapper {
+  margin-bottom: 30px;
+}
+
+.inner-form-wrapper {
+  margin-bottom: 18px;
 }
 
 @media (min-width: variables.$tablet-width) {
-  .top-menu-main__wrapper {
+  .top-menu-main-wrapper {
     background-image: url("../img/toy_house_tablet.jpg");
     height: 627px;
     background-position: 50% 0%;
@@ -58,7 +62,7 @@
     content: "";
     position: absolute;
     background-image: url("../img/zigzag-fill-tablet.svg");
-    top: 718px;
+    top: 725px;
     left: 0;
     width: 100%;
     height: 24px;
@@ -68,33 +72,33 @@
     content: "";
     position: absolute;
     background-image: url("../img/zigzag-fill-tablet.svg");
-    top: 240px;
+    top: 206px;
     left: 0;
     width: 100%;
     height: 24px;
   }
 
-  .top-menu-inner__wrapper {
-    margin-bottom: 54px;
+  .top-menu-inner-wrapper {
+    margin-bottom: 90px;
   }
 
   .top-menu__title {
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
-    padding: 154px 50px 372px;
+    padding: 110px 50px 372px;
   }
 
   .inner-title {
     padding-bottom: 63px;
-    padding-top: 101px;
+    padding-top: 57px;
   }
 
-  .top-menu-main-page__wrapper--desktop {
+  .top-menu-main-page-wrapper-desktop {
     display: none;
   }
 
-  .top-menu-main-page__wrapper {
+  .top-menu-main-page-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
@@ -103,7 +107,8 @@
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 22px;
+    margin-left: 2px;
   }
 
   .top-menu__link {
@@ -125,7 +130,7 @@
   .top-menu__item-order {
     display: block;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .top-menu__item {
@@ -135,15 +140,23 @@
       margin-right: 37px;
     }
   }
+
+  .inner-form-wrapper {
+    margin-bottom: 79px;
+  }
+
+  .inner-title-form {
+    padding-left: 56px;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .top-menu-inner__wrapper {
-    margin-bottom: 98px;
+  .top-menu-inner-wrapper {
+    margin-bottom: 0;
   }
 
   .top-menu-main-page::after {
-    top: 715px;
+    top: 725px;
     height: 34px;
     background-image: url("../img/zigzag-fill-desktop.svg");
   }
@@ -151,50 +164,55 @@
   .top-menu-inner-page::after {
     height: 34px;
     background-image: url("../img/zigzag-fill-desktop.svg");
+    top: 220px;
   }
 
-  .top-menu-main__wrapper {
+  .top-menu-main-wrapper {
     background-image: url("../img/toy_house_desktop.jpg");
     height: 627px;
     background-position: 50% 0%;
     background-repeat: no-repeat;
+    max-width: 1060px;
   }
 
   .top-menu__title {
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
+    padding: 111px 0 372px 15px;
   }
 
   .top-menu__list {
     display: none;
   }
 
-  .top-menu-main-page__wrapper {
+  .top-menu-main-page-wrapper {
     display: flex;
-    justify-content: space-between;
+    width: 1070px;
   }
 
-  .top-menu-main-page__wrapper--desktop {
+  .top-menu-main-page-wrapper-desktop {
     display: block;
+    margin-right: 503px;
   }
 
-  .top-menu-main-page__wrapper--desktop__item {
+  .top-menu-main-page-wrapper-desktop__item {
     list-style-type: none;
   }
 
-  .top-menu-main-page__wrapper--desktop__list {
+  .top-menu-main-page-wrapper-desktop__list {
     margin: 0;
     padding: 0;
     display: flex;
-    margin-top: 20px;
+    margin-top: 22px;
+    padding-left: 9px;
   }
 
-  .top-menu-main-page__wrapper--desktop__item:first-child {
-    margin-right: 41px;
+  .top-menu-main-page-wrapper-desktop__item:first-child {
+    margin-right: 61px;
   }
 
-  .top-menu-main-page__wrapper--desktop__link {
+  .top-menu-main-page-wrapper-desktop__link {
     text-decoration: none;
     font-weight: 700;
     font-size: 15px;
@@ -216,5 +234,13 @@
     line-height: 24px;
     color: rgba(68, 68, 68, 1);
     text-decoration: none;
+  }
+
+  .inner-title {
+    padding: 57px 40px 82px 57px;
+  }
+
+  .top-menu__item-order {
+    margin-left: 0;
   }
 }

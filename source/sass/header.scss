@@ -1,19 +1,22 @@
 @use "variables.scss";
 
-.site-list__item {
-  list-style-type: none;
+.main-header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .main-navigation__link {
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   display: block;
   text-align: center;
-  padding: 28px 0 26px;
-  box-shadow: 0 1px 0 rgba(236, 236, 236, 1), inset 0 1px 0 rgba(236, 236, 236, 1);
+  padding: 29px 17px 26px 0;
+  margin: 0 auto;
+  width: 280px;
 
   &:hover {
     opacity: 0.6;
@@ -24,20 +27,8 @@
   }
 }
 
-.main-header {
-  display: flex;
-  flex-direction: column;
-}
-
 .main-header__wrapper {
-  width: 280px;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 1);
-}
-
-.main-navigation__wrapper {
-  width: 280px;
-  margin: 0 auto;
 }
 
 .main-header__logo-mobile-image {
@@ -54,25 +45,11 @@
   display: none;
 }
 
-.main-header__logo-wrappep {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.user-list__link {
-  display: block;
-  text-align: start;
-}
-
-.main-navigation__list {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .user-list__search-icon {
-  padding-left: 36px;
-  padding-right: 26px;
+  padding-right: 22px;
   color: rgba(0, 0, 0, 1);
+  padding-left: 15px;
+  padding-top: 1px;
 
   &:hover {
     color: rgba(99, 209, 187, 1);
@@ -85,8 +62,36 @@
 }
 
 .user-list__cart-icon {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 20px;
+  padding-left: 14px;
+}
+
+
+.site-list__item {
+  list-style-type: none;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.user-list__item {
+  list-style-type: none;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.user-list__link {
+  text-align: start;
+  padding-right: 4px;
+}
+
+.main-navigation__link--knitting-link {
+  padding-left: 6px;
+}
+
+.user-list__link-search {
+  padding-top: 28px;
+}
+
+.user-list__link-cart {
+  padding-top: 28px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -94,29 +99,32 @@
     display: none;
   }
 
-  .main-navigation {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
   .main-navigation__link {
-    box-shadow: none;
-    padding: 35px 0 34px;
+    padding-top: 33px;
+    width: auto;
   }
 
   .user-list {
     display: flex;
-    width: 400px;
+    width: 370px;
+  }
+
+  .user-list__item,
+  .site-list__item {
+    box-shadow: none;
   }
 
   .main-header__logo-table-link {
     display: block;
     width: 320px;
-    padding: 22px 0 20px;
+    padding: 22px 0 13px;
+    margin-right: 210px;
   }
 
   .main-header__wrapper {
     display: flex;
     width: 668px;
+    margin: 0 auto;
   }
 
   .main-navigation__toggle {
@@ -131,7 +139,9 @@
     display: none;
   }
 
-  .user-list__link--search {
+  .user-list__link-search {
+    padding-left: 15px;
+
     &::after {
       content: "";
       position: absolute;
@@ -140,7 +150,7 @@
       height: 92px;
       width: 1px;
       top: 0;
-      left: 5px;
+      left: -1px;
     }
 
     &::before {
@@ -151,16 +161,25 @@
       height: 92px;
       width: 1px;
       top: 0;
-      left: 85px;
+      left: 80px;
     }
+  }
+
+  .user-list__cart-icon {
+    padding-right: 27px;
+    padding-left: 32px;
+  }
+
+  .user-list__link-cart {
+    margin-left: 30px;
+  }
+
+  .user-list__search-icon {
+    padding-right: 0;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-navigation {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
   .main-navigation__toggle {
     display: none;
   }
@@ -189,7 +208,7 @@
 
   .site-list {
     display: flex;
-    width: 460px;
+    width: 450px;
   }
 
   .main-header__wrapper {
@@ -197,7 +216,7 @@
     margin: 0 auto;
   }
 
-  .main-navigation--desktop {
+  .main-navigation-desktop {
     display: flex;
     width: 1100px;
     margin-left: 50px;
@@ -209,6 +228,7 @@
 
   .main-navigation__link {
     box-shadow: none;
+    padding: 33px 0 26px;
   }
 
   .site-list__item {
@@ -225,5 +245,18 @@
       top: 0;
       left: -35px;
     }
+  }
+
+  .user-list__cart-icon {
+    padding-right: 26px;
+    padding-left: 28px;
+  }
+
+  .user-list__link-search {
+    padding-left: 16px;
+  }
+
+  .user-list__search-icon {
+    padding-right: 6px;
   }
 }

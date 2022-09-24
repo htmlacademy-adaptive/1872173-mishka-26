@@ -19,14 +19,14 @@
   position: relative;
 }
 
-.main-container--wrapper {
+.container {
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 260px;
   width: 100%;
   position: relative;
 }
 
-.inner-page__body {
+.inner-page-body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -40,13 +40,13 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-  .main-container--wrapper {
+  .container {
     max-width: 668px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-container--wrapper {
+  .container {
     max-width: 1050px;
   }
 }

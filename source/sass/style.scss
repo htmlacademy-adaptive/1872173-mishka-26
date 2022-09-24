@@ -3,19 +3,20 @@
 @use "pages.scss";
 @use "variables.scss";
 @use "title.scss";
-@use "about-us.scss";
-@use "feedback.scss";
 @use "button";
-@use "catalog-popular.scss";
+@use "about_us.scss";
+@use "feedback.scss";
+@use "catalog_popular.scss";
 @use "catalog.scss";
 @use "contacts.scss";
 @use "footer.scss";
 @use "header.scss";
 @use "modal_window.scss";
-@use "product-options.scss";
+@use "product_options.scss";
 @use "top_menu.scss";
 @use "forms.scss";
 @use "main_nav.scss";
+@use "map.scss";
 
 .visually-hidden {
   @include mixin.visually-hidden;

@@ -6,14 +6,13 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  padding: 24px 0 32px 30px;
+  padding: 23px 0 32px;
   text-decoration: none;
 }
 
 .product-options__wrapper {
   display: grid;
   width: 100%;
-  margin-bottom: 31px;
 }
 
 .product-options__list {
@@ -30,8 +29,8 @@
   width: 40px;
   height: 62px;
   background-image: url("../img/interior.svg");
-  top: 15px;
-  right: 30px;
+  top: 22px;
+  right: 3px;
 }
 
 
@@ -45,8 +44,8 @@
   width: 60px;
   height: 60px;
   background-image: url("../img/toy.svg");
-  top: 15px;
-  right: 30px;
+  top: 20px;
+  right: -5px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -56,10 +55,26 @@
     max-width: 668px;
   }
 
+  .product-options__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 39px;
+    padding-top: 26px;
+  }
+
   .product-options__wrapper {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 39px;
+  }
+
+  .interior-item__link::after {
+    right: 74px;
+    top: 30px;
+  }
+
+  .toys-item__link::after {
+    right: 71px;
+    top: 33px;
   }
 }
 
@@ -68,11 +83,11 @@
     max-width: 1050px;
   }
 
-  .product-options__wrapper {
-    margin-bottom: 54px;
-  }
-
   .product-options__list:hover {
     transform: translateY(-5px);
+  }
+
+  .product-options__wrapper {
+    padding-left: 8px;
   }
 }
