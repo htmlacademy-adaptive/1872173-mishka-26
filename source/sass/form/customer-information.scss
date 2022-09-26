@@ -1,14 +1,5 @@
 @use "variables.scss";
 
-.customer-information-field__order-wish {
-  border: 2px solid #444444;
-  box-shadow: none;
-  padding: 17px 40px 86px 17px;
-  margin-top: 22px;
-  resize: none;
-  width: min-content;
-  margin-left: 1px;
-}
 
 .customer-information__bio {
   padding-top: 21px;
@@ -85,6 +76,17 @@
       fill: rgba(98, 209, 186, 1);
     }
   }
+}
+
+
+.customer-information-field__order-wish {
+  border: 2px solid #444444;
+  box-shadow: none;
+  padding: 17px 40px 86px 17px;
+  margin-top: 22px;
+  resize: none;
+  width: min-content;
+  margin-left: 1px;
 }
 
 @media (min-width: variables.$tablet-width) {
