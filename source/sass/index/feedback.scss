@@ -78,7 +78,7 @@
   }
 }
 
-.wave::after {
+.feedback--wave::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -95,7 +95,7 @@
     padding-bottom: 68px;
   }
 
-  .wave::after {
+  .feedback--wave::after {
     height: 17px;
     background-image: url("../img/zigzag-line-tablet.svg");
   }
@@ -193,7 +193,7 @@
     margin-bottom: 96px;
   }
 
-  .wave::after {
+  .feedback--wave::after {
     height: 24px;
     background-image: url("../img/zigzag-line-desktop.svg");
     width: 90%;

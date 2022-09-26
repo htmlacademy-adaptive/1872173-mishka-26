@@ -1,0 +1,220 @@
+@use "variables.scss";
+
+.customer-information-field__order-wish {
+  border: 2px solid #444444;
+  box-shadow: none;
+  padding: 17px 40px 86px 17px;
+  margin-top: 22px;
+  resize: none;
+  width: min-content;
+  margin-left: 1px;
+}
+
+.customer-information__bio {
+  padding-top: 21px;
+  padding-right: 15px;
+}
+
+.customer-information-phone::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  top: 6px;
+  right: 0;
+  background-color: rgba(98, 209, 186, 1);
+}
+
+.customer-information-email::after {
+  content: "";
+  position: absolute;
+  width: 182px;
+  height: 1px;
+  top: 113px;
+  right: 0;
+  background-color: rgba(98, 209, 186, 1);
+}
+
+.customer-information-field__phone-input-icon {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  top: 30px;
+  right: 6px;
+}
+
+
+.customer-information-field__email-input-icon {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  top: 143px;
+  right: 0;
+}
+
+.customer-information-field__phone-input {
+  margin-bottom: 34px;
+}
+
+.customer-information-field {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  outline: none;
+
+  &:hover {
+    border-color: rgba(98, 209, 186, 1);
+
+    & ~ .customer-information-field__input-icon {
+      fill: rgba(98, 209, 186, 1);
+    }
+  }
+
+  &:focus {
+    border-color: rgba(98, 209, 186, 1);
+    color: rgba(68, 68, 68, 1);
+
+    & ~ .customer-information-field__input-icon {
+      fill: rgba(98, 209, 186, 1);
+    }
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information-wrapper {
+    display: flex;
+    width: 90%;
+  }
+
+  .customer-information-email::after {
+    display: none;
+  }
+
+  .customer-information-email {
+    margin-bottom: 50px;
+    width: 100%;
+
+    &::before {
+      top: 135px;
+      right: 80px;
+    }
+  }
+
+  .customer-information-phone {
+    width: 100%;
+    margin-top: 17px;
+
+    &::before {
+      top: 25px;
+      right: 80px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .customer-information-field {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .customer-information {
+    display: flex;
+    width: 500px;
+  }
+
+  .customer-information__bio {
+    margin-right: 10px;
+    padding-top: 20px;
+  }
+
+  .customer-information-field__phone-input {
+    margin-left: 105px;
+    margin-top: 25px;
+    margin-bottom: 14px;
+    background-color: rgba(241, 241, 241, 1);
+    width: 100%;
+    max-width: 1050px;
+    padding-left: 17px;
+  }
+
+  .customer-information-field__email-input {
+    margin-left: 99px;
+    background-color: rgba(241, 241, 241, 1);
+    width: 100%;
+    max-width: 1050px;
+    padding-left: 17px;
+  }
+
+  .customer-information-field__order-wish {
+    width: 100%;
+    max-width: 1050px;
+    margin-left: 109px;
+    margin-top: 0;
+  }
+
+  .customer-information-field__phone-input-icon {
+    top: 57px;
+    right: 23px;
+  }
+
+  .customer-information-field__email-input-icon {
+    top: 140px;
+    right: 19px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .customer-information {
+    width: 700px;
+  }
+
+  .customer-information-phone::before {
+    top: 95px;
+    right: 120px;
+  }
+
+  .customer-information-email::before {
+    top: 175px;
+    right: 115px;
+  }
+
+  .customer-information-field__phone-input {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .customer-information-field__email-input-icon {
+    top: 139px;
+    right: 171px;
+  }
+
+  .customer-information-field__phone-input-icon {
+    right: 175px;
+    top: 58px;
+  }
+
+  .customer-information-field__phone-input,
+  .customer-information-field__email-input {
+    width: 65%;
+  }
+
+  .customer-information-field__email-input {
+    margin-left: 19px;
+  }
+
+  .customer-information-field__order-wish {
+    margin-left: 18px;
+    width: 61%;
+    padding-top: 11px;
+  }
+}

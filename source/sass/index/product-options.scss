@@ -19,35 +19,6 @@
   position: relative;
 }
 
-.interior-item {
-  background-color: rgba(99, 209, 187, 1);
-}
-
-.interior-item__link::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 62px;
-  background-image: url("../img/interior.svg");
-  top: 22px;
-  right: 3px;
-}
-
-
-.toys-item {
-  background-color: rgba(86, 195, 178, 1);
-}
-
-.toys-item__link::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/toy.svg");
-  top: 20px;
-  right: -5px;
-}
-
 @media (min-width: variables.$tablet-width) {
   .product-options {
     margin: 0 auto;
@@ -65,16 +36,6 @@
   .product-options__wrapper {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .interior-item__link::after {
-    right: 74px;
-    top: 30px;
-  }
-
-  .toys-item__link::after {
-    right: 71px;
-    top: 33px;
   }
 }
 
