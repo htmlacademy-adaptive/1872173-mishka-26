@@ -40,13 +40,6 @@
   padding-left: 1px;
 }
 
-.feedback-button {
-  display: block;
-  margin-top: 36px;
-  text-align: center;
-  padding: 14px;
-}
-
 .feedback__slider {
   display: flex;
   margin-top: 29px;
@@ -78,7 +71,7 @@
   }
 }
 
-.wave::after {
+.feedback--wave::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -95,7 +88,7 @@
     padding-bottom: 68px;
   }
 
-  .wave::after {
+  .feedback--wave::after {
     height: 17px;
     background-image: url("../img/zigzag-line-tablet.svg");
   }
@@ -137,14 +130,6 @@
     grid-row: 3;
     justify-content: flex-end;
     margin-right: 18px;
-  }
-
-  .feedback-button {
-    justify-self: flex-end;
-    margin: 0;
-    align-self: flex-end;
-    margin-bottom: 40px;
-    width: 42%;
   }
 
   .feedback__author-info {
@@ -189,11 +174,7 @@
     margin-bottom: 96px;
   }
 
-  .feedback_slider {
-    margin-bottom: 96px;
-  }
-
-  .wave::after {
+  .feedback--wave::after {
     height: 24px;
     background-image: url("../img/zigzag-line-desktop.svg");
     width: 90%;
@@ -212,12 +193,6 @@
     margin-right: 12px;
     align-items: flex-start;
     margin-top: 55px;
-  }
-
-  .feedback-button {
-    margin-bottom: 40px;
-    width: 27%;
-    margin-right: -7px;
   }
 
   .feedback__wrapper {

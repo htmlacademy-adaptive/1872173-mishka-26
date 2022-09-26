@@ -1,0 +1,21 @@
+@use "variables.scss";
+
+.container {
+  margin: 0 auto;
+  max-width: 260px;
+  width: 100%;
+  position: relative;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .container {
+    max-width: 668px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .container {
+    max-width: 1050px;
+  }
+}

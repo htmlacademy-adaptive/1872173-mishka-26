@@ -56,7 +56,7 @@
   margin: 0;
 }
 
-.price {
+.catalog-popular__footer-price {
   color: rgba(68, 68, 68, 1);
   font-weight: 700;
   font-size: 17px;
@@ -78,7 +78,7 @@
   background-image: url("../img/zigzag-line-mobile.svg");
 }
 
-.catalog-popular-button {
+.catalog-popular__footer-button {
   padding: 14px 15px;
 }
 
@@ -147,7 +147,7 @@
     justify-content: flex-end;
   }
 
-  .price {
+  .catalog-popular__footer-price {
     margin-top: 0;
     margin-bottom: 32px;
     font-size: 20px;
@@ -155,7 +155,7 @@
     text-align: start;
   }
 
-  .catalog-popular-button {
+  .catalog-popular__footer-button {
     width: 98%;
     text-align: start;
     padding: 15px 99px 13px;

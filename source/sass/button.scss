@@ -24,6 +24,11 @@
   }
 }
 
+.button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(68, 68, 68, 1);
+}
+
 @media (min-width: variables.$tablet-width) {
   .button {
     font-size: 17px;

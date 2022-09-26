@@ -31,12 +31,18 @@
   .main-footer__logo {
     display: block;
     margin-right: 110px;
+    padding-left: 2px;
+    padding-top: 3px;
   }
 
   .main-footer__wrapper {
     display: flex;
     margin-top: 51px;
     margin-bottom: 58px;
+  }
+
+  .main-footer__logo-icon {
+    fill: rgba(0, 0, 0, 1);
   }
 }
 
@@ -55,7 +61,11 @@
     padding-top: 3px;
 
     &:hover {
-      fill: hsl(171, 50%, 52%);
+      fill: rgb(70, 193, 174);
+    }
+
+    &:active {
+      fill: rgba(70, 193, 174, 0.3);
     }
   }
 }

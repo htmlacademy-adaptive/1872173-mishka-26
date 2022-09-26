@@ -1,0 +1,9 @@
+@use "variables.scss";
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information-wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+}

@@ -1,0 +1,105 @@
+@use "variables.scss";
+
+.customer-information-field--phone-input {
+  margin-bottom: 30px;
+}
+
+.customer-information-field {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  outline: none;
+
+  &:hover {
+    border-color: rgba(98, 209, 186, 1);
+
+    & ~ .customer-information-field-input-icon {
+      fill: rgba(98, 209, 186, 1);
+    }
+  }
+
+  &:focus {
+    border-color: rgba(98, 209, 186, 1);
+    color: rgba(68, 68, 68, 1);
+
+    & ~ .customer-information-field-input-icon {
+      fill: rgba(98, 209, 186, 1);
+    }
+  }
+}
+
+.customer-information-field--order-wish {
+  border: 2px solid #444444;
+  box-shadow: none;
+  padding: 17px 40px 86px 17px;
+  margin-top: 22px;
+  resize: none;
+  width: min-content;
+  margin-left: 1px;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information-field {
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 16px;
+  }
+
+  .customer-information-field--phone-input {
+    margin-left: 105px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    background-color: rgba(241, 241, 241, 1);
+    width: 100%;
+    max-width: 1050px;
+    padding-left: 17px;
+  }
+
+  .customer-information-field--email-input {
+    margin-left: 99px;
+    background-color: rgba(241, 241, 241, 1);
+    width: 100%;
+    max-width: 1050px;
+    padding-left: 17px;
+  }
+
+  .customer-information-field--order-wish {
+    width: 100%;
+    max-width: 1050px;
+    margin-left: 109px;
+    margin-top: 0;
+  }
+}
+
+
+@media (min-width: variables.$desktop-width) {
+  .customer-information-field--phone-input {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+
+  .customer-information-field--phone-input,
+  .customer-information-field--email-input {
+    width: 65%;
+    padding-right: 0;
+  }
+
+  .customer-information-field--email-input {
+    margin-left: 19px;
+  }
+
+
+  .customer-information-field--order-wish {
+    margin-left: 18px;
+    width: 61%;
+    padding-top: 11px;
+  }
+}

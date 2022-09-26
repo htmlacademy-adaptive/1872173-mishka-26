@@ -50,7 +50,8 @@
   }
 
   .user-list__link-search {
-    padding-left: 15px;
+    padding-left: 0;
+    padding-top: 33px;
 
     &::after {
       content: "";
@@ -81,7 +82,8 @@
   }
 
   .user-list__link-cart {
-    margin-left: 30px;
+    margin-left: 13px;
+    padding-top: 33px;
   }
 
   .user-list__search-icon {
@@ -94,14 +96,14 @@
 @media (min-width: variables.$desktop-width) {
   .user-list__cart-icon {
     padding-right: 26px;
-    padding-left: 58px;
-  }
-
-  .user-list__link-search {
-    padding-left: 16px;
+    padding-left: 54px;
   }
 
   .user-list__search-icon {
     padding-right: 6px;
+  }
+
+  .user-list__link-cart {
+    margin-left: 0;
   }
 }

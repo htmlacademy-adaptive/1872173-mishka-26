@@ -25,13 +25,13 @@
     <link rel="apple-touch-icon" href="./img/favicons/180.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
   </head>
-  <body class="inner-page-body">
+  <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a
           class="main-header__logo-table-link"
           aria-label="Логотип Интернет-магазина Мишка."
-          href="#"
+          href="index.html"
         >
           <svg
             class="main-header__logo-table-image"
@@ -47,7 +47,7 @@
         <a
           class="main-header__logo-mobile-link"
           aria-label="Логотип Интернет-магазина Мишка."
-          href="#"
+          href="index.html"
         >
           <svg
             class="main-header__logo-mobile-image"
@@ -85,7 +85,7 @@
             <a
               class="main-header__logo-link"
               aria-label="Логотип Интернет-магазина Мишка."
-              href="#"
+              href="index.html"
             >
               <svg
                 class="main-header__logo-image"
@@ -147,10 +147,10 @@
         </nav>
       </div>
     </header>
-    <main class="inner-container">
-      <section class="top-menu top-menu-inner-page">
-        <div class="top-menu__wrapper top-menu-inner-wrapper container">
-          <div class="top-menu-main-page-wrapper">
+    <main class="main-container">
+      <section class="top-menu top-menu--inner-page">
+        <div class="top-menu__wrapper top-menu__inner-wrapper container">
+          <div class="top-menu__main-page-wrapper">
             <ul class="top-menu__list">
               <li class="top-menu__item">
                 <a class="top-menu__link" href="catalog.html">
@@ -163,21 +163,21 @@
                 </a>
               </li>
             </ul>
-            <div class="top-menu-main-page-wrapper-desktop">
-              <ul class="top-menu-main-page-wrapper-desktop__list">
+            <div class="top-menu__main-page-wrapper-desktop">
+              <ul class="top-menu__main-page-wrapper-desktop__list top-menu__main-page-wrapper-desktop__list--inner">
                 <li
-                  class="top-menu__item top-menu-main-page-wrapper-desktop__item"
+                  class="top-menu__item top-menu__main-page-wrapper-desktop__item"
                 >
                   <a
-                    class="top-menu__link top-menu-main-page-wrapper-desktop__link"
+                    class="top-menu__link top-menu__main-page-wrapper-desktop__link"
                     href="#"
                   >
                     Новые поступления
                   </a>
                 </li>
-                <li class="top-menu-main-page-wrapper-desktop__item">
+                <li class="top-menu__main-page-wrapper-desktop__item">
                   <a
-                    class="top-menu__link top-menu-main-page-wrapper-desktop__link"
+                    class="top-menu__link top-menu__main-page-wrapper-desktop__link"
                     href="#"
                   >
                     Распродажа
@@ -191,14 +191,14 @@
               </a>
             </div>
           </div>
-          <h1 class="top-menu__title inner-title">Каталог товаров</h1>
+          <h1 class="top-menu__title top-menu__title-inner">Каталог товаров</h1>
         </div>
       </section>
       <section class="catalog">
         <div class="catalog__wrapper container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <article class="catalog card-content">
+              <article class="catalog__card-content">
                 <picture>
                   <source
                     type="image/webp"
@@ -239,7 +239,7 @@
                     "
                   />
                   <img
-                    class="card-content__image"
+                    class="catalog__card-content-image"
                     src="img/rabbit-mobile.jpg"
                     srcset="img/rabbit-mobile@2x.jpg 2x"
                     width="260"
@@ -247,17 +247,17 @@
                     alt="Вязанный заяц."
                   />
                 </picture>
-                <div class="card-content__wrapper">
-                  <h3 class="card-content__title">Зайчик-попрыгайчик</h3>
-                  <p class="card-content__description">Рост 30 см, вес 200 г</p>
-                  <div class="card-footer">
-                    <b class="card-footer__price">1 200 руб.</b>
-                    <a class="card-footer__add-cart-link" href="#"
+                <div class="catalog__card-content-wrapper">
+                  <h3 class="catalog__card-content-title">Зайчик-попрыгайчик</h3>
+                  <p class="catalog__card-content-description">Рост 30 см, вес 200 г</p>
+                  <div class="catalog__card-footer">
+                    <b class="catalog__card-footer-price">1 200 руб.</b>
+                    <a class="catalog__card-footer-add-cart-link" href="#"
                       ><span class="visually-hidden"
                         >Добавить товар в корзину</span
                       >
                       <svg
-                        class="card-footer__add-cart-icon"
+                        class="catalog__card-footer-add-cart-icon"
                         aria-hidden="true"
                         focusable="false"
                         width="21"
@@ -272,7 +272,7 @@
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog card-content">
+              <article class="catalog__card-content">
                 <picture>
                   <source
                     type="image/webp"
@@ -313,7 +313,7 @@
                     "
                   />
                   <img
-                    class="card-content__image"
+                    class="catalog__card-content-image"
                     src="img/basket-mobile.jpg"
                     srcset="img/basket-mobile@2x.jpg 2x"
                     width="260"
@@ -321,19 +321,19 @@
                     alt="Вязанная корзина для белья."
                   />
                 </picture>
-                <div class="card-content__wrapper">
-                  <h3 class="card-content__title">Корзинка для белья</h3>
-                  <p class="card-content__description">
+                <div class="catalog__card-content-wrapper">
+                  <h3 class="catalog__card-content-title">Корзинка для белья</h3>
+                  <p class="catalog__card-content-description">
                     Диаметр 15 см, высота 10 см
                   </p>
-                  <div class="card-footer">
-                    <b class="card-footer__price">690 руб.</b>
-                    <a class="card-footer__add-cart-link" href="#"
+                  <div class="catalog__card-footer">
+                    <b class="catalog__card-footer-price">690 руб.</b>
+                    <a class="catalog__card-footer-add-cart-link" href="#"
                       ><span class="visually-hidden"
                         >Добавить товар в корзину</span
                       >
                       <svg
-                        class="card-footer__add-cart-icon"
+                        class="catalog__card-footer-add-cart-icon"
                         aria-hidden="true"
                         focusable="false"
                         width="21"
@@ -348,7 +348,7 @@
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog card-content">
+              <article class="catalog__card-content">
                 <picture>
                   <source
                     type="image/webp"
@@ -389,7 +389,7 @@
                     "
                   />
                   <img
-                    class="card-content__image"
+                    class="catalog__card-content-image"
                     src="img/basket-big-mobile.jpg"
                     srcset="img/basket-big-mobile@2x.jpg 2x"
                     width="260"
@@ -397,22 +397,22 @@
                     alt="Большая вязанная корзинка для игрушек."
                   />
                 </picture>
-                <div class="card-content__wrapper">
-                  <h3 class="card-content__title">
+                <div class="catalog__card-content-wrapper">
+                  <h3 class="catalog__card-content-title">
                     Большая корзинка<br />
                     для игрушек
                   </h3>
-                  <p class="card-content__description">
+                  <p class="catalog__card-content-description">
                     Диаметр 30 см, высота 30 см
                   </p>
-                  <div class="card-footer">
-                    <b class="card-footer__price">1 500 руб.</b>
-                    <a class="card-footer__add-cart-link" href="#"
+                  <div class="catalog__card-footer">
+                    <b class="catalog__card-footer-price">1 500 руб.</b>
+                    <a class="catalog__card-footer-add-cart-link" href="#"
                       ><span class="visually-hidden"
                         >Добавить товар в корзину</span
                       >
                       <svg
-                        class="card-footer__add-cart-icon"
+                        class="catalog__card-footer-add-cart-icon"
                         aria-hidden="true"
                         focusable="false"
                         width="21"
@@ -432,7 +432,7 @@
       <section class="production">
         <div class="production__wrapper container">
           <h2 class="production__title">Процесс производства</h2>
-          <div class="pruduction-video">
+          <div class="production__video">
             <picture>
               <source
                 type="image/webp"
@@ -458,7 +458,7 @@
                 srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x"
               />
               <img
-                class="production-image"
+                class="production__image"
                 src="img/video-mobile.jpg"
                 srcset="img/video-mobile@2x.jpg 2x"
                 width="260"
@@ -466,10 +466,10 @@
                 alt="Вязанная корзинка ручной работы."
               />
             </picture>
-            <button class="video-button">
+            <button class="production__video-button">
               <span class="visually-hidden">Воспроизвести видео</span>
               <svg
-                class="video-button__icon"
+                class="production__video-button-icon"
                 width="101"
                 height="77"
                 viewBox="0 0 101 77"
@@ -498,7 +498,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper container">
-        <a class="main-footer__logo" href="#"
+        <a class="main-footer__logo" href="index.html"
           ><span class="visually-hidden">Логотип магазина Мишка.</span>
           <svg
             class="main-footer__logo-icon"
@@ -582,7 +582,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal-order modal-container-close">
+    <div class="modal modal-order modal--container-close">
       <section class="modal-order-content">
         <h2 class="modal-order-content__title">Добавить в корзину</h2>
         <p class="modal-order-content__description">Выберите размер:</p>
@@ -623,7 +623,7 @@
             <label for="L" class="modal-form__control">L</label>
           </div>
         </form>
-        <button class="button modal-button" type="button">Добавить</button>
+        <button class="button modal__button" type="button">Добавить</button>
       </section>
     </div>
     <script src="./js/script.js"></script>

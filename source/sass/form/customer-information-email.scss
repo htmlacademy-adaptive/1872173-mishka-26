@@ -1,0 +1,36 @@
+@use "variables.scss";
+
+.customer-information-email::after {
+  content: "";
+  position: absolute;
+  width: 182px;
+  height: 1px;
+  top: 113px;
+  right: 0;
+  background-color: rgba(98, 209, 186, 1);
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information-email::after {
+    display: none;
+  }
+
+  .customer-information-email {
+    margin-bottom: 50px;
+    width: 100%;
+
+    &::before {
+      top: 135px;
+      right: 80px;
+    }
+  }
+}
+
+
+@media (min-width: variables.$desktop-width) {
+  .customer-information-email::before {
+    top: 175px;
+    right: 115px;
+  }
+}

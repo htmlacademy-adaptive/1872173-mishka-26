@@ -6,23 +6,3 @@
   line-height: 30px;
   margin: 0;
 }
-
-.inner-title {
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  padding: 73px 0;
-}
-
-@media (min-width: variables.$tablet-width) {
-  .inner-title {
-    padding-bottom: 63px;
-    padding-top: 57px;
-  }
-}
-
-@media (min-width: variables.$desktop-width) {
-  .inner-title {
-    padding: 57px 40px 82px 57px;
-  }
-}

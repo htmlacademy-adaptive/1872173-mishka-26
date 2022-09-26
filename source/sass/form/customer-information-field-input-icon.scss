@@ -1,0 +1,43 @@
+@use "variables.scss";
+
+.customer-information-field-input-icon--phone {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  top: 30px;
+  right: 6px;
+}
+
+
+.customer-information-field-input-icon--email {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  top: 143px;
+  right: 0;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information-field-input-icon--phone {
+    top: 34px;
+    right: 23px;
+  }
+
+  .customer-information-field-input-icon--email {
+    top: 22px;
+    right: 19px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .customer-information-field-input-icon--email {
+    top: 20px;
+    right: 171px;
+  }
+
+  .customer-information-field-input-icon--phone {
+    right: 175px;
+    top: 33px;
+  }
+}

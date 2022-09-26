@@ -1,0 +1,22 @@
+@use "variables.scss";
+
+.interior-item {
+  background-color: rgba(99, 209, 187, 1);
+}
+
+.interior-item__link::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/interior.svg");
+  top: 22px;
+  right: 3px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .interior-item__link::after {
+    right: 74px;
+    top: 30px;
+  }
+}

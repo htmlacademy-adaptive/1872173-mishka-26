@@ -11,6 +11,13 @@
   color: rgba(0, 0, 0, 1);
 }
 
+.top-menu__title-inner {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  padding: 73px 0;
+}
+
 .top-menu__list {
   display: none;
 }
@@ -19,38 +26,38 @@
   display: none;
 }
 
-.top-menu-main-page-wrapper-desktop {
+.top-menu__main-page-wrapper-desktop {
   display: none;
 }
 
-.top-menu-main-page {
+.top-menu--main-page {
   background-color: rgba(249, 249, 249, 1);
 }
 
-.top-menu-inner-page {
+.top-menu--inner-page {
   background-color: rgba(241, 241, 241, 1);
 }
 
-.top-menu-main-wrapper {
+.top-menu__main-wrapper {
   background-image: url("../img/toy_house_mobile.jpg");
   height: 283px;
   background-position: 50% 20%;
   background-repeat: no-repeat;
 }
 
-.top-menu-inner-wrapper {
-  margin-bottom: 30px;
+.top-menu__inner-wrapper {
+  margin-bottom: 16px;
 }
 
 @media (min-width: variables.$tablet-width) {
-  .top-menu-main-wrapper {
+  .top-menu__main-wrapper {
     background-image: url("../img/toy_house_tablet.jpg");
     height: 627px;
     background-position: 50% 0%;
     background-repeat: no-repeat;
   }
 
-  .top-menu-main-page::after {
+  .top-menu--main-page::after {
     content: "";
     position: absolute;
     background-image: url("../img/zigzag-fill-tablet.svg");
@@ -60,7 +67,7 @@
     height: 24px;
   }
 
-  .top-menu-inner-page::after {
+  .top-menu--inner-page::after {
     content: "";
     position: absolute;
     background-image: url("../img/zigzag-fill-tablet.svg");
@@ -70,8 +77,8 @@
     height: 24px;
   }
 
-  .top-menu-inner-wrapper {
-    margin-bottom: 90px;
+  .top-menu__inner-wrapper {
+    margin-bottom: 80px;
   }
 
   .top-menu__title {
@@ -81,11 +88,16 @@
     padding: 110px 50px 372px;
   }
 
-  .top-menu-main-page-wrapper-desktop {
+  .top-menu__title-inner {
+    padding-bottom: 63px;
+    padding-top: 57px;
+  }
+
+  .top-menu__main-page-wrapper-desktop {
     display: none;
   }
 
-  .top-menu-main-page-wrapper {
+  .top-menu__main-page-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
@@ -130,23 +142,23 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .top-menu-inner-wrapper {
+  .top-menu__inner-wrapper {
     margin-bottom: 0;
   }
 
-  .top-menu-main-page::after {
+  .top-menu--main-page::after {
     top: 725px;
     height: 34px;
     background-image: url("../img/zigzag-fill-desktop.svg");
   }
 
-  .top-menu-inner-page::after {
+  .top-menu--inner-page::after {
     height: 34px;
     background-image: url("../img/zigzag-fill-desktop.svg");
-    top: 220px;
+    top: 230px;
   }
 
-  .top-menu-main-wrapper {
+  .top-menu__main-wrapper {
     background-image: url("../img/toy_house_desktop.jpg");
     height: 627px;
     background-position: 50% 0%;
@@ -161,25 +173,29 @@
     padding: 111px 0 372px 15px;
   }
 
+  .top-menu__title-inner {
+    padding: 57px 40px 82px 57px;
+  }
+
   .top-menu__list {
     display: none;
   }
 
-  .top-menu-main-page-wrapper {
+  .top-menu__main-page-wrapper {
     display: flex;
     width: 1070px;
   }
 
-  .top-menu-main-page-wrapper-desktop {
+  .top-menu__main-page-wrapper-desktop {
     display: block;
     margin-right: 503px;
   }
 
-  .top-menu-main-page-wrapper-desktop__item {
+  .top-menu__main-page-wrapper-desktop__item {
     list-style-type: none;
   }
 
-  .top-menu-main-page-wrapper-desktop__list {
+  .top-menu__main-page-wrapper-desktop__list {
     margin: 0;
     padding: 0;
     display: flex;
@@ -187,11 +203,11 @@
     padding-left: 15px;
   }
 
-  .top-menu-main-page-wrapper-desktop__item:first-child {
+  .top-menu__main-page-wrapper-desktop__item:first-child {
     margin-right: 61px;
   }
 
-  .top-menu-main-page-wrapper-desktop__link {
+  .top-menu__main-page-wrapper-desktop__link {
     text-decoration: none;
     font-weight: 700;
     font-size: 15px;
@@ -202,9 +218,13 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
-    &:disabled {
+    &:active {
       color: rgba(0, 0, 0, 0.3);
     }
+  }
+
+  .top-menu__main-page-wrapper-desktop__link:focus {
+    color: rgba(0, 0, 0, 0.3);
   }
 
   .top-menu__link--free_order {
@@ -217,5 +237,9 @@
 
   .top-menu__item-order {
     margin-left: 0;
+  }
+
+  .top-menu__main-page-wrapper-desktop__list--inner {
+    padding-left: 10px;
   }
 }

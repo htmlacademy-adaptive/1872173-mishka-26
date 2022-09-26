@@ -1,0 +1,24 @@
+@use "variables.scss";
+
+.customer-information__bio {
+  padding-top: 21px;
+  padding-right: 15px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information {
+    display: flex;
+    width: 500px;
+  }
+
+  .customer-information__bio {
+    margin-right: 10px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .customer-information {
+    width: 700px;
+  }
+}

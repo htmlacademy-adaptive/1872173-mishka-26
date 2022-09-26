@@ -1,0 +1,22 @@
+@use "variables.scss";
+
+.toys-item {
+  background-color: rgba(86, 195, 178, 1);
+}
+
+.toys-item__link::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/toy.svg");
+  top: 20px;
+  right: -5px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .toys-item__link::after {
+    right: 71px;
+    top: 33px;
+  }
+}
