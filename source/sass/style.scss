@@ -29,6 +29,13 @@
 @use "./main-footer/main-footer.scss";
 @use "./main-footer/copyrights.scss";
 @use "./main-footer/social.scss";
+@use "./form/customer-information-field-input-icon.scss";
+@use "./form/customer-information-email.scss";
+@use "./form/customer-information-phone.scss";
+@use "./form/customer-information-wrapper.scss";
+@use "./form/customer-information-field.scss";
+@use "./index/feedback-button.scss";
+
 
 .visually-hidden {
   @include mixin.visually-hidden;

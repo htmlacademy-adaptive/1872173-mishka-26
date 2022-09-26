@@ -30,11 +30,11 @@
   display: none;
 }
 
-.top-menu__main-page {
+.top-menu--main-page {
   background-color: rgba(249, 249, 249, 1);
 }
 
-.top-menu__inner-page {
+.top-menu--inner-page {
   background-color: rgba(241, 241, 241, 1);
 }
 
@@ -46,7 +46,7 @@
 }
 
 .top-menu__inner-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -57,7 +57,7 @@
     background-repeat: no-repeat;
   }
 
-  .top-menu__main-page::after {
+  .top-menu--main-page::after {
     content: "";
     position: absolute;
     background-image: url("../img/zigzag-fill-tablet.svg");
@@ -67,7 +67,7 @@
     height: 24px;
   }
 
-  .top-menu__inner-page::after {
+  .top-menu--inner-page::after {
     content: "";
     position: absolute;
     background-image: url("../img/zigzag-fill-tablet.svg");
@@ -146,13 +146,13 @@
     margin-bottom: 0;
   }
 
-  .top-menu__main-page::after {
+  .top-menu--main-page::after {
     top: 725px;
     height: 34px;
     background-image: url("../img/zigzag-fill-desktop.svg");
   }
 
-  .top-menu__inner-page::after {
+  .top-menu--inner-page::after {
     height: 34px;
     background-image: url("../img/zigzag-fill-desktop.svg");
     top: 230px;

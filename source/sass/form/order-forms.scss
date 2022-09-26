@@ -52,7 +52,7 @@
   list-style-type: none;
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
 }
 
@@ -121,13 +121,13 @@
     border-color: rgba(98, 209, 186, 1);
   }
 
-  &:focus {
-    border-color: rgba(68, 68, 68, 0.3);
-  }
-
   &:active {
     border-color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.order-forms__radio-input:focus ~ .order-forms__radio-input-icon {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-forms__radio-input[type="radio"]:checked + .order-forms__radio-input-icon::after {
@@ -138,8 +138,9 @@
   height: 17px;
   border-radius: 50%;
   background-color: #62d1ba;
-  top: 11px;
-  left: 11px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .order-forms__checkbox-input-icon {
@@ -155,9 +156,13 @@
     border-color: rgba(98, 209, 186, 1);
   }
 
-  &:focus {
+  &:active {
     border-color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.order-forms__checkbox-input:focus ~ .order-forms__checkbox-input-icon {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-forms__checkbox-input[type="checkbox"]:checked + .order-forms__checkbox-input-icon::after {
@@ -211,7 +216,7 @@
   margin-top: 21px;
 
   &:first-child {
-    margin-top: 29px;
+    margin-top: 26px;
   }
 }
 
@@ -267,6 +272,7 @@
 
   .order-forms__item {
     margin-bottom: 58px;
+    font-size: 19px;
 
     &:first-child {
       padding-top: 0;
@@ -296,8 +302,9 @@
     height: 20px;
     border-radius: 50%;
     background-color: #62d1ba;
-    top: 12px;
-    left: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .order-forms__checkbox-input-text {
@@ -333,7 +340,7 @@
 
 
   .order-forms__title__contacts {
-    margin-top: 47px;
+    margin-top: 40px;
     padding: 0;
   }
 
@@ -346,7 +353,7 @@
   .order-forms__footer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .order-forms__note {
@@ -354,6 +361,7 @@
     order: 2;
     font-size: 17px;
     line-height: 30px;
+    padding-top: 15px;
   }
 
   .order-forms__more {

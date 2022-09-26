@@ -1,0 +1,36 @@
+@use "variables.scss";
+
+.customer-information-phone::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  top: 6px;
+  right: 0;
+  background-color: rgba(98, 209, 186, 1);
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .customer-information-phone {
+    width: 100%;
+    margin-top: 17px;
+
+    &::before {
+      top: 25px;
+      right: 80px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+@media (min-width: variables.$desktop-width) {
+  .customer-information-phone::before {
+    top: 95px;
+    right: 120px;
+  }
+}
